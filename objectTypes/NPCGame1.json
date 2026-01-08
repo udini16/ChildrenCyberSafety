@@ -1,0 +1,228 @@
+{
+	"name": "NPCGame1",
+	"plugin-id": "Sprite",
+	"sid": 134664513911420,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "Message",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 579260220556773
+		},
+		{
+			"name": "TargetLayout",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 191469290487586
+		},
+		{
+			"name": "TalkState",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 942761797862741
+		},
+		{
+			"name": "isTalking",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 647923923745827
+		},
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 203938261079918
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 38,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9345352,
+						"collisionPoly": {
+							"points": [
+								0.375,
+								0.02631578947368421,
+								0.625,
+								0.02631578947368421,
+								0.75,
+								0.07894736842105263,
+								0.9375,
+								0.5,
+								0.9375,
+								0.6842105263157895,
+								0.8125,
+								0.9736842105263158,
+								0.1875,
+								0.9736842105263158,
+								0.0625,
+								0.6578947368421053,
+								0.0625,
+								0.5263157894736842,
+								0.1875,
+								0.18421052631578946,
+								0.25,
+								0.07894736842105263
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 16,
+						"height": 39,
+						"originX": 0.5,
+						"originY": 0.5128205128205128,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5386532,
+						"collisionPoly": {
+							"points": [
+								0.375,
+								0.02564102564102564,
+								0.625,
+								0.02564102564102564,
+								0.75,
+								0.07692307692307693,
+								0.8125,
+								0.1794871794871795,
+								0.9375,
+								0.5128205128205128,
+								0.9375,
+								0.6923076923076923,
+								0.8125,
+								0.9743589743589743,
+								0.1875,
+								0.9743589743589743,
+								0.0625,
+								0.6666666666666666,
+								0.0625,
+								0.5128205128205128,
+								0.1875,
+								0.1794871794871795,
+								0.25,
+								0.07692307692307693
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 16,
+						"height": 39,
+						"originX": 0.5,
+						"originY": 0.5128205128205128,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4467518,
+						"collisionPoly": {
+							"points": [
+								0.375,
+								0.02564102564102564,
+								0.625,
+								0.02564102564102564,
+								0.75,
+								0.07692307692307693,
+								0.8125,
+								0.1794871794871795,
+								0.9375,
+								0.5128205128205128,
+								0.9375,
+								0.6923076923076923,
+								0.8125,
+								0.9743589743589743,
+								0.1875,
+								0.9743589743589743,
+								0.0625,
+								0.6666666666666666,
+								0.0625,
+								0.5128205128205128,
+								0.1875,
+								0.1794871794871795,
+								0.25,
+								0.07692307692307693
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 16,
+						"height": 38,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6592806,
+						"collisionPoly": {
+							"points": [
+								0.375,
+								0.02631578947368421,
+								0.6875,
+								0.02631578947368421,
+								0.75,
+								0.07894736842105263,
+								0.8125,
+								0.15789473684210525,
+								0.9375,
+								0.5,
+								0.9375,
+								0.6842105263157895,
+								0.8125,
+								0.9736842105263158,
+								0.1875,
+								0.9736842105263158,
+								0.0625,
+								0.6578947368421053,
+								0.0625,
+								0.5263157894736842,
+								0.1875,
+								0.15789473684210525,
+								0.25,
+								0.07894736842105263
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 467811570690491,
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"name": "InstructionTXT",
+	"plugin-id": "Text",
+	"sid": 556684209522111,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
