@@ -96,7 +96,8 @@
 			"Text",
 			"StartButton",
 			"Text2",
-			"Mouse"
+			"Mouse",
+			"Tilemap"
 		],
 		"subfolders": []
 	},
@@ -118,7 +119,8 @@
 		"items": [
 			"Map1",
 			"Challenge1",
-			"StartLayout"
+			"StartLayout",
+			"Layout 2"
 		],
 		"subfolders": []
 	},
@@ -126,7 +128,8 @@
 		"items": [
 			"Map1Sheet",
 			"Challenge1Sheet",
-			"StartLayoutSheet"
+			"StartLayoutSheet",
+			"Event sheet 2"
 		],
 		"subfolders": []
 	},
