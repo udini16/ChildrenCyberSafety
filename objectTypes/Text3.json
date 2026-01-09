@@ -1,0 +1,10 @@
+{
+	"name": "Text3",
+	"plugin-id": "Text",
+	"sid": 345689228276811,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

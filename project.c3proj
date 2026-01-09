@@ -97,7 +97,8 @@
 			"StartButton",
 			"Text2",
 			"Mouse",
-			"Tilemap"
+			"Tilemap",
+			"Text3"
 		],
 		"subfolders": []
 	},
