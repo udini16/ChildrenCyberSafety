@@ -1,0 +1,32 @@
+{
+	"name": "StartLayoutSheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 559221156516054,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "StartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 336045164904150,
+					"parameters": {
+						"layout": "Map1"
+					}
+				}
+			],
+			"sid": 950085388604478
+		}
+	],
+	"sid": 420197276920516
+}
