@@ -1,0 +1,253 @@
+{
+	"name": "OutsideSheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 184670688587055
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-scale",
+					"objectClass": "System",
+					"sid": 809727151167052,
+					"parameters": {
+						"scale": "2.0"
+					}
+				}
+			],
+			"sid": 474165815386476
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 154444598496262,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 807751034193499,
+							"parameters": {
+								"animation": "\"WalkEast\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 298163078399044
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 790409977360415,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 634217629819927,
+							"parameters": {
+								"animation": "\"WalkWest\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 811498715078165
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 441772267693392,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 503832179594629,
+							"parameters": {
+								"animation": "\"WalkNorth\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 623931081985483
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 897282402485764,
+							"parameters": {
+								"key": 40
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 989676350570460,
+							"parameters": {
+								"animation": "\"WalkSouth\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 724973279028470
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "Player",
+							"sid": 199181740728344,
+							"behaviorType": "8Direction",
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 110155826566516,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Player",
+									"sid": 276223742290476,
+									"parameters": {
+										"animation": "\"WalkEast\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 361110198068190,
+									"parameters": {
+										"animation": "\"IdleEast\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 756373772816187
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Player",
+									"sid": 795198397523404,
+									"parameters": {
+										"animation": "\"WalkWest\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 757160521386688,
+									"parameters": {
+										"animation": "\"IdleWest\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 724931360800141
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Player",
+									"sid": 271517049495879,
+									"parameters": {
+										"animation": "\"WalkNorth\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 861060250975226,
+									"parameters": {
+										"animation": "\"IdleNorth\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 378261871099797
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Player",
+									"sid": 200038405849078,
+									"parameters": {
+										"animation": "\"WalkSouth\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 968015701126666,
+									"parameters": {
+										"animation": "\"IdleSouth\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 232800586885216
+						}
+					]
+				}
+			],
+			"sid": 473014200611970
+		}
+	],
+	"sid": 516053664247285
+}

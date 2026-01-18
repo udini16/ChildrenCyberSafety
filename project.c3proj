@@ -98,7 +98,9 @@
 			"Text2",
 			"Mouse",
 			"Tilemap",
-			"Text3"
+			"Text3",
+			"outside",
+			"solid2"
 		],
 		"subfolders": []
 	},
@@ -130,7 +132,7 @@
 			"Map1Sheet",
 			"Challenge1Sheet",
 			"StartLayoutSheet",
-			"Event sheet 2"
+			"OutsideSheet"
 		],
 		"subfolders": []
 	},
