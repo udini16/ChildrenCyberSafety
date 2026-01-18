@@ -2,6 +2,36 @@
 	"name": "OutsideSheet",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "SaveX2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 246042235135317
+		},
+		{
+			"eventType": "variable",
+			"name": "SaveY2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 731780098125524
+		},
+		{
+			"eventType": "variable",
+			"name": "IsReturning2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 489742545849115
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -247,6 +277,265 @@
 				}
 			],
 			"sid": 473014200611970
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Game2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 468786098331035,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 446278436405753,
+							"parameters": {
+								"object": "NPCGame1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 338282183169007,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "NPCGame1",
+									"sid": 875027842240193,
+									"parameters": {
+										"instance-variable": "TalkState",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "DialogBox",
+									"sid": 280534881962883,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "DialogText",
+									"sid": 587885600547967,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "DialogText",
+									"sid": 485261631220901,
+									"parameters": {
+										"text": "NPCGame1.Message & newline & \"[Press E]\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "NPCGame1",
+									"sid": 394109386487318,
+									"parameters": {
+										"instance-variable": "TalkState",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "NPCGame1",
+									"sid": 652647407769339,
+									"parameters": {
+										"instance-variable": "isTalking",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 150687684623680
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "NPCGame1",
+									"sid": 540017307614879,
+									"parameters": {
+										"instance-variable": "TalkState",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "DialogText",
+									"sid": 528764929330212,
+									"parameters": {
+										"text": "\"Are you ready for the challenge? (Press Q to Accept)\""
+									}
+								}
+							],
+							"sid": 388097775112998
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 681105051561048,
+							"parameters": {
+								"key": 81
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 592943489464663,
+							"parameters": {
+								"object": "NPCGame1"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "NPCGame1",
+							"sid": 263757851414437,
+							"parameters": {
+								"instance-variable": "TalkState",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 855062802047892,
+							"parameters": {
+								"variable": "SaveX",
+								"value": "Player.X"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 652180818100946,
+							"parameters": {
+								"variable": "SaveY",
+								"value": "Player.Y"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 330475180865224,
+							"parameters": {
+								"variable": "IsReturning",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "NPCGame1",
+							"sid": 548557856760713,
+							"parameters": {
+								"instance-variable": "isTalking",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "NPCGame1",
+							"sid": 318051833324783,
+							"parameters": {
+								"instance-variable": "TalkState",
+								"value": "0"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 800536984444539,
+							"parameters": {
+								"layout": "Challenge1"
+							}
+						}
+					],
+					"sid": 328439910594278
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 782195812650175,
+							"parameters": {
+								"object": "NPCGame1"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DialogBox",
+							"sid": 894154137687499,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DialogText",
+							"sid": 564264691943105,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "NPCGame1",
+							"sid": 735462051541994,
+							"parameters": {
+								"instance-variable": "isTalking",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "NPCGame1",
+							"sid": 132691408632365,
+							"parameters": {
+								"instance-variable": "TalkState",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 483546488224201
+				}
+			],
+			"sid": 752732627432759
 		}
 	],
 	"sid": 516053664247285
