@@ -100,7 +100,8 @@
 			"Tilemap",
 			"Text3",
 			"outside",
-			"solid2"
+			"solid2",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -123,7 +124,8 @@
 			"Map1",
 			"Challenge1",
 			"StartLayout",
-			"Layout 2"
+			"Layout 2",
+			"Map3"
 		],
 		"subfolders": []
 	},
@@ -132,7 +134,8 @@
 			"Map1Sheet",
 			"Challenge1Sheet",
 			"StartLayoutSheet",
-			"OutsideSheet"
+			"OutsideSheet",
+			"Map3Sheet"
 		],
 		"subfolders": []
 	},
