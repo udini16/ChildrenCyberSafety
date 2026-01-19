@@ -128,16 +128,9 @@
 			"DialogBox2Game3",
 			"DialogText2Game3",
 			"DialogText3Game3",
-<<<<<<< HEAD
-			"DialogBox3Game3"
-=======
 			"DialogBox3Game3",
-<<<<<<< HEAD
-			"ResultPanelGame3"
-=======
+			"ResultPanelGame3",
 			"BackgroundChallenge"
->>>>>>> 69e24671d0c4991b95614540bb487424cdcaaf29
->>>>>>> 1578c9f1d004723537ee65ef6140580fb18165d5
 		],
 		"subfolders": [
 			{
