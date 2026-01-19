@@ -129,7 +129,11 @@
 			"DialogText2Game3",
 			"DialogText3Game3",
 			"DialogBox3Game3",
+<<<<<<< HEAD
 			"ResultPanelGame3"
+=======
+			"BackgroundChallenge"
+>>>>>>> 69e24671d0c4991b95614540bb487424cdcaaf29
 		],
 		"subfolders": [
 			{
