@@ -45,6 +45,7 @@
 				},
 				{
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
@@ -102,6 +103,8 @@
 					}
 				},
 				{
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 					"type": "Solid",
@@ -2355,20 +2358,27 @@
 				},
 				{
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 					"type": "NPCGame3",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
 =======
+=======
+>>>>>>> Stashed changes
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "IdleSouth",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 					"uid": 82,
 					"sid": 396221670903184,
@@ -2424,6 +2434,8 @@
 								"use-instance-tags": true,
 								"tags": ""
 =======
+=======
+>>>>>>> Stashed changes
 					"uid": 121,
 					"sid": 251977668839991,
 					"tags": "",
@@ -2446,13 +2458,20 @@
 						"ScrollTo": {
 							"properties": {
 								"enabled": true
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 							}
 						}
 					},
 					"instanceFolderItem": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 						"sid": 453873163287432,
+=======
+						"sid": 251977668839991,
+>>>>>>> Stashed changes
 =======
 						"sid": 251977668839991,
 >>>>>>> Stashed changes
@@ -2461,6 +2480,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 						"x": 1310.7525257368357,
 						"y": 361.8802290973212,
@@ -2958,12 +2978,17 @@
 						"originX": 0,
 						"originY": 0,
 =======
+=======
+>>>>>>> Stashed changes
 						"x": 670,
 						"y": 235,
 						"width": 43.694389442285086,
 						"height": 80.81561101487247,
 						"originX": 0.55,
 						"originY": 0.5434782608695652,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 						"color": [
 							1,
