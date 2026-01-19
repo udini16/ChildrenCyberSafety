@@ -1,7 +1,7 @@
 {
-	"name": "ResultPanel",
+	"name": "ResultPanelGame3",
 	"plugin-id": "Sprite",
-	"sid": 909690552899337,
+	"sid": 694333317846662,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,15 +12,15 @@
 			{
 				"frames": [
 					{
-						"width": 251,
-						"height": 251,
+						"width": 643,
+						"height": 360,
 						"originX": 0.49800796812749004,
 						"originY": 0.49800796812749004,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"fileType": "image/png",
-						"imageSpriteId": 86584,
+						"fileType": "image/jpeg",
+						"imageSpriteId": 237488,
 						"collisionPoly": {
 							"points": [
 								0,
@@ -38,7 +38,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 873218059184613,
+				"sid": 140461768014789,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
