@@ -44,6 +44,7 @@
 					}
 				},
 				{
+<<<<<<< Updated upstream
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
@@ -101,6 +102,8 @@
 					}
 				},
 				{
+=======
+>>>>>>> Stashed changes
 					"type": "Solid",
 					"properties": {
 						"initially-visible": true,
@@ -2351,14 +2354,22 @@
 					}
 				},
 				{
+<<<<<<< Updated upstream
 					"type": "NPCGame3",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
+=======
+					"type": "Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "IdleSouth",
+>>>>>>> Stashed changes
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 					"uid": 82,
 					"sid": 396221670903184,
 					"tags": "",
@@ -2412,16 +2423,45 @@
 								"enabled": true,
 								"use-instance-tags": true,
 								"tags": ""
+=======
+					"uid": 121,
+					"sid": 251977668839991,
+					"tags": "",
+					"instanceVariables": {
+						"IsInteracting": false
+					},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 200,
+								"deceleration": 200,
+								"directions": "dir-4",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+>>>>>>> Stashed changes
 							}
 						}
 					},
 					"instanceFolderItem": {
+<<<<<<< Updated upstream
 						"sid": 453873163287432,
+=======
+						"sid": 251977668839991,
+>>>>>>> Stashed changes
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
+<<<<<<< Updated upstream
 						"x": 1310.7525257368357,
 						"y": 361.8802290973212,
 						"width": 55.98966222598103,
@@ -2917,6 +2957,14 @@
 						"height": 51,
 						"originX": 0,
 						"originY": 0,
+=======
+						"x": 670,
+						"y": 235,
+						"width": 43.694389442285086,
+						"height": 80.81561101487247,
+						"originX": 0.55,
+						"originY": 0.5434782608695652,
+>>>>>>> Stashed changes
 						"color": [
 							1,
 							1,
