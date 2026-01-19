@@ -109,7 +109,17 @@
 					"backgroundrooftop4",
 					"backgroundroof2",
 					"backgroundrooftop1",
-					"backgroundrooftop3"
+					"backgroundrooftop3",
+					"Enemy",
+					"roofnpc1",
+					"roofnpc2",
+					"roofnpc3",
+					"roofnpc4",
+					"roofnpc5",
+					"roofnpc6",
+					"roofnpc7",
+					"roofnpc8",
+					"roofnpc9"
 				],
 				"subfolders": [],
 				"name": "rooftoop"
