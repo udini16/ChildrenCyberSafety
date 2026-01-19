@@ -100,10 +100,21 @@
 			"Tilemap",
 			"Text3",
 			"outside",
-			"solid2",
 			"Sprite"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"solid3",
+					"backgroundrooftop4",
+					"backgroundroof2",
+					"backgroundrooftop1",
+					"backgroundrooftop3"
+				],
+				"subfolders": [],
+				"name": "rooftoop"
+			}
+		]
 	},
 	"functionsName": "Functions",
 	"autosaveData": null,
@@ -125,7 +136,8 @@
 			"Challenge1",
 			"StartLayout",
 			"Layout 2",
-			"Map3"
+			"Map3",
+			"Rooftop"
 		],
 		"subfolders": []
 	},
@@ -135,7 +147,8 @@
 			"Challenge1Sheet",
 			"StartLayoutSheet",
 			"OutsideSheet",
-			"Map3Sheet"
+			"Map3Sheet",
+			"rooftop event sheet"
 		],
 		"subfolders": []
 	},
