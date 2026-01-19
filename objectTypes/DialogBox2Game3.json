@@ -1,7 +1,7 @@
 {
-	"name": "ResultPanel",
+	"name": "DialogBox2Game3",
 	"plugin-id": "Sprite",
-	"sid": 909690552899337,
+	"sid": 463466086246030,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,33 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 251,
-						"height": 251,
-						"originX": 0.49800796812749004,
-						"originY": 0.49800796812749004,
+						"width": 221,
+						"height": 93,
+						"originX": 0.5067873303167421,
+						"originY": 0.5053763440860215,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 86584,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.9960159362549801,
-								0,
-								0.9960159362549801,
-								0.9960159362549801,
-								0,
-								0.9960159362549801
-							]
-						},
+						"imageSpriteId": 885673,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 873218059184613,
+				"sid": 882008465937555,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

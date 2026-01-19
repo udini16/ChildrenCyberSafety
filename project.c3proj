@@ -50,8 +50,29 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -100,7 +121,15 @@
 			"Tilemap",
 			"Text3",
 			"outside",
-			"Sprite"
+			"Sprite",
+			"NPCGame3",
+			"NPC3",
+			"NPC4",
+			"DialogBox2Game3",
+			"DialogText2Game3",
+			"DialogText3Game3",
+			"DialogBox3Game3",
+			"ResultPanelGame3"
 		],
 		"subfolders": [
 			{
@@ -123,6 +152,23 @@
 				],
 				"subfolders": [],
 				"name": "rooftoop"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"TiledBackground",
+							"Spell",
+							"Sprite2",
+							"Sprite3",
+							"Text4"
+						],
+						"subfolders": [],
+						"name": "Object types"
+					}
+				],
+				"name": "Game3Object"
 			}
 		]
 	},
@@ -133,6 +179,18 @@
 			"members": [
 				"DialogBox",
 				"DialogText"
+			]
+		},
+		{
+			"members": [
+				"DialogBox2Game3",
+				"DialogText2Game3"
+			]
+		},
+		{
+			"members": [
+				"DialogBox3Game3",
+				"DialogText3Game3"
 			]
 		}
 	],
@@ -147,7 +205,8 @@
 			"StartLayout",
 			"Layout 2",
 			"Map3",
-			"Rooftop"
+			"Rooftop",
+			"Challenge3"
 		],
 		"subfolders": []
 	},
@@ -158,7 +217,8 @@
 			"StartLayoutSheet",
 			"OutsideSheet",
 			"Map3Sheet",
-			"rooftop event sheet"
+			"rooftop event sheet",
+			"Challenge3Sheet"
 		],
 		"subfolders": []
 	},
