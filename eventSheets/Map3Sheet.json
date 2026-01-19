@@ -45,7 +45,7 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Player",
-							"sid": 703293829337049,
+							"sid": 903857243704288,
 							"parameters": {
 								"animation": "\"WalkEast\"",
 								"from": "beginning"
