@@ -100,7 +100,14 @@
 			"Tilemap",
 			"Text3",
 			"outside",
-			"Sprite"
+			"Sprite",
+			"NPCGame3",
+			"NPC3",
+			"NPC4",
+			"DialogBox2Game3",
+			"DialogText2Game3",
+			"DialogText3Game3",
+			"DialogBox3Game3"
 		],
 		"subfolders": [
 			{
@@ -123,6 +130,18 @@
 			"members": [
 				"DialogBox",
 				"DialogText"
+			]
+		},
+		{
+			"members": [
+				"DialogBox2Game3",
+				"DialogText2Game3"
+			]
+		},
+		{
+			"members": [
+				"DialogBox3Game3",
+				"DialogText3Game3"
 			]
 		}
 	],
