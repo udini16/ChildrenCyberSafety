@@ -129,8 +129,7 @@
 			"DialogText2Game3",
 			"DialogText3Game3",
 			"DialogBox3Game3",
-			"ResultPanelGame3",
-			"BackgroundChallenge"
+			"ResultPanelGame3"
 		],
 		"subfolders": [
 			{
