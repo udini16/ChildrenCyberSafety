@@ -1,36 +1,6 @@
 {
-	"name": "rooftop event sheet",
+	"name": "Rooftop Event Sheet",
 	"events": [
-		{
-			"eventType": "variable",
-			"name": "SaveX3",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 324429313495227
-		},
-		{
-			"eventType": "variable",
-			"name": "SaveY3",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 969964435469945
-		},
-		{
-			"eventType": "variable",
-			"name": "IsReturning3",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 739789219017372
-		},
 		{
 			"eventType": "block",
 			"conditions": [
@@ -277,6 +247,202 @@
 				}
 			],
 			"sid": 834670023940704
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Interaction",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 845929523215193,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 196442107648517,
+							"parameters": {
+								"object": "RTPInteract"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 664009754548753,
+							"parameters": {
+								"layer": "\"DialogueUI\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 337043480313075,
+							"parameters": {
+								"layer": "\"DialogueUI\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "RTPDialogueTxt",
+							"sid": 122295662868320,
+							"parameters": {
+								"text": "\"Greetings. If you want to test your skills, find the challenger waiting in the field.\""
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 963332478440893,
+							"parameters": {
+								"group-name": "\"Player4\"",
+								"state": "deactivated"
+							}
+						}
+					],
+					"sid": 467129616016062
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 985202006816637,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 461370662642852,
+							"parameters": {
+								"object": "RTPInteract2"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 517789801942375,
+							"parameters": {
+								"layer": "\"DialogueUI\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 495476521725591,
+							"parameters": {
+								"layer": "\"DialogueUI\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "RTPDialogueTxt",
+							"sid": 921843153323434,
+							"parameters": {
+								"text": "\"You want Challenge!! Press Spacebar\""
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 218840205455833,
+							"parameters": {
+								"group-name": "\"Player4\"",
+								"state": "deactivated"
+							}
+						}
+					],
+					"sid": 860754648950889
+				}
+			],
+			"sid": 429110932306802
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 760248343451702,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 130083832595533,
+					"parameters": {
+						"layer": "\"DialogueUI\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 777449549988934,
+					"parameters": {
+						"layer": "\"DialogueUI\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 990591476833469,
+					"parameters": {
+						"group-name": "\"Player4\"",
+						"state": "activated"
+					}
+				}
+			],
+			"sid": 557958927576809,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 520609659192080,
+							"parameters": {
+								"object": "RTPInteract2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 535159963837553,
+							"parameters": {
+								"layout": "RTPStart"
+							}
+						}
+					],
+					"sid": 286026341671280
+				}
+			]
 		}
 	],
 	"sid": 767294738504514

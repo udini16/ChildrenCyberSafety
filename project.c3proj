@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -50,6 +57,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
@@ -66,6 +80,20 @@
 			"type": "behavior",
 			"id": "Fade",
 			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -115,7 +143,6 @@
 			"ResultText",
 			"StartText1",
 			"Text",
-			"StartButton",
 			"Text2",
 			"Mouse",
 			"Tilemap",
@@ -129,7 +156,10 @@
 			"DialogText2Game3",
 			"DialogText3Game3",
 			"DialogBox3Game3",
-			"ResultPanelGame3"
+			"ResultPanelGame3",
+			"StartButton",
+			"Audio",
+			"RTPInteract2"
 		],
 		"subfolders": [
 			{
@@ -148,10 +178,39 @@
 					"roofnpc6",
 					"roofnpc7",
 					"roofnpc8",
-					"roofnpc9"
+					"roofnpc9",
+					"RTPDialogueBox",
+					"RTPDialogueTxt",
+					"RTPInteract"
 				],
-				"subfolders": [],
-				"name": "rooftoop"
+				"subfolders": [
+					{
+						"items": [
+							"RTPStartBack",
+							"RTPbtnplaytext",
+							"RTPbtn",
+							"RTPStartText",
+							"RTPBackRules",
+							"RTPbtnRules",
+							"RTPRuleTitle",
+							"RTPRulesBox",
+							"RTPrulestext",
+							"RTPGameBack",
+							"RTPGameDron",
+							"RTPGateTop",
+							"RTPGateBottom",
+							"RTPGameTxt",
+							"RTPGameTxt2",
+							"RTPResultPanel",
+							"RTPScoretxt",
+							"RTPWinMessage",
+							"RTPYouWon"
+						],
+						"subfolders": [],
+						"name": "rooftoop Game"
+					}
+				],
+				"name": "Rooftop"
 			},
 			{
 				"items": [],
@@ -192,6 +251,18 @@
 				"DialogBox3Game3",
 				"DialogText3Game3"
 			]
+		},
+		{
+			"members": [
+				"RTPGameTxt",
+				"RTPGateTop"
+			]
+		},
+		{
+			"members": [
+				"RTPGameTxt2",
+				"RTPGateBottom"
+			]
 		}
 	],
 	"families": {
@@ -205,10 +276,20 @@
 			"StartLayout",
 			"Layout 2",
 			"Map3",
-			"Rooftop",
 			"Challenge3"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Rooftop",
+					"RTPStart",
+					"RTPRules",
+					"RTPGame"
+				],
+				"subfolders": [],
+				"name": "Rooftop"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
@@ -217,10 +298,20 @@
 			"StartLayoutSheet",
 			"OutsideSheet",
 			"Map3Sheet",
-			"rooftop event sheet",
 			"Challenge3Sheet"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Rooftop Event Sheet",
+					"RTPStart Sheet",
+					"RTPRules Sheet",
+					"RTPGame Sheet"
+				],
+				"subfolders": [],
+				"name": "Rooftop"
+			}
+		]
 	},
 	"rootFileFolders": {
 		"script": {
@@ -229,7 +320,54 @@
 		},
 		"sound": {
 			"items": [],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "RTPDrone Sound.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 961102125326052,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "RTPpoint.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 356950122874609,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "RTPhunted-28148.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 746831041517273,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "RTPvictory.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 217256176588791,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "RTPmain menu song.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 587120946806310,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Rooftop"
+				}
+			]
 		},
 		"music": {
 			"items": [],

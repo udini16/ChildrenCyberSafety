@@ -1,0 +1,48 @@
+{
+	"name": "RTPGateBottom",
+	"plugin-id": "Sprite",
+	"sid": 211342828698287,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "isSafe",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 537218818320309
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 803,
+						"height": 756,
+						"originX": 0.49813200498132004,
+						"originY": 0.48412698412698413,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3766260,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 575446066477411,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

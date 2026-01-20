@@ -1,0 +1,104 @@
+{
+	"name": "RTPStart Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 676350545329515,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "RTPbtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 299712366368404,
+					"parameters": {
+						"layout": "RTPRules"
+					}
+				}
+			],
+			"sid": 603234454867350
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 790129131866948,
+					"parameters": {
+						"object": "RTPbtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "RTPbtn",
+					"sid": 391695826726144,
+					"parameters": {
+						"scale": "1.2"
+					}
+				}
+			],
+			"sid": 678760187544644
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 882401062046811
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "RTPbtn",
+					"sid": 540852697798606,
+					"parameters": {
+						"scale": "1"
+					}
+				}
+			],
+			"sid": 895729697523285
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 626271933952919
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 967487539256234,
+					"parameters": {
+						"audio-file": {
+							"path": "Rooftop/RTPmain menu song"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"RTPmain\""
+					}
+				}
+			],
+			"sid": 780444425304365
+		}
+	],
+	"sid": 401061796729403
+}

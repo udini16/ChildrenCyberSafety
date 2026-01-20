@@ -1,0 +1,16 @@
+{
+	"name": "RTPGameTxt2",
+	"plugin-id": "Text",
+	"sid": 650762447935478,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 418663086303467
+		}
+	],
+	"effectTypes": []
+}

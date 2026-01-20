@@ -1,0 +1,10 @@
+{
+	"name": "RTPScoretxt",
+	"plugin-id": "Text",
+	"sid": 422383160455767,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

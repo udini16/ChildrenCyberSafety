@@ -1,0 +1,10 @@
+{
+	"name": "RTPStartText",
+	"plugin-id": "Text",
+	"sid": 291642680672782,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

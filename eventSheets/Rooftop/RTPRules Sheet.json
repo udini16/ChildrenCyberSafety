@@ -1,0 +1,77 @@
+{
+	"name": "RTPRules Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 363168688593847,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "RTPbtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 446688216889727,
+					"parameters": {
+						"layout": "RTPGame"
+					}
+				}
+			],
+			"sid": 321263354499391
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 842670356381997,
+					"parameters": {
+						"object": "RTPbtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "RTPbtn",
+					"sid": 963968751255630,
+					"parameters": {
+						"scale": "1.2"
+					}
+				}
+			],
+			"sid": 397925693985103
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 438242083636926
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "RTPbtn",
+					"sid": 405997905942414,
+					"parameters": {
+						"scale": "1"
+					}
+				}
+			],
+			"sid": 560612758973429
+		}
+	],
+	"sid": 175681254717702
+}

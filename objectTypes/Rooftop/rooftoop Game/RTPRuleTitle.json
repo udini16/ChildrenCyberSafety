@@ -1,0 +1,10 @@
+{
+	"name": "RTPRuleTitle",
+	"plugin-id": "Text",
+	"sid": 715209664615723,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

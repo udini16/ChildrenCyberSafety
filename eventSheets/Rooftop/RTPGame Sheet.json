@@ -1,0 +1,908 @@
+{
+	"name": "RTPGame Sheet",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "RandomSafe",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 767781477664228
+		},
+		{
+			"eventType": "variable",
+			"name": "RandomUnsafe",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 214533372749171
+		},
+		{
+			"eventType": "variable",
+			"name": "Flip",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 313660731676482
+		},
+		{
+			"eventType": "variable",
+			"name": "RTPScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 636533866480874
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Main",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 952970399682090,
+							"parameters": {
+								"interval-seconds": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 356933779185968,
+							"parameters": {
+								"variable": "Flip",
+								"value": "choose(0,1)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 466680272733352,
+							"parameters": {
+								"variable": "RandomSafe",
+								"value": "choose(\"paypal.com\" ,  \"uitm.edu.my\", \"maybank2u.com\", \"microsoft.com\")"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 994675163019807,
+							"parameters": {
+								"variable": "RandomUnsafe",
+								"value": "choose(\"paypa1.com\" ,  \"uitm-login.net\", \"maybank-secure.xyz\", \"micro-soft.tk\")"
+							}
+						}
+					],
+					"sid": 182085423978116,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 683902799626866,
+									"parameters": {
+										"first-value": "Flip",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 125093603396408,
+									"parameters": {
+										"object-to-create": "RTPGateTop",
+										"layer": "0",
+										"x": "1300",
+										"y": "200",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "RTPGateTop",
+									"sid": 495355517116208,
+									"parameters": {
+										"instance-variable": "isSafe",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "RTPGameTxt",
+									"sid": 665949923797032,
+									"parameters": {
+										"text": "RandomSafe"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 151175531255670,
+									"parameters": {
+										"object-to-create": "RTPGateBottom",
+										"layer": "0",
+										"x": "1300",
+										"y": "550",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "RTPGateBottom",
+									"sid": 221154162119990,
+									"parameters": {
+										"instance-variable": "isSafe",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "RTPGameTxt2",
+									"sid": 597699533997527,
+									"parameters": {
+										"text": "RandomUnsafe"
+									}
+								}
+							],
+							"sid": 866178102050994
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 168106668181134
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 294298169160486,
+									"parameters": {
+										"object-to-create": "RTPGateTop",
+										"layer": "0",
+										"x": "1300",
+										"y": "200",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "RTPGateTop",
+									"sid": 999357405118450,
+									"parameters": {
+										"instance-variable": "isSafe",
+										"value": "false"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "RTPGameTxt",
+									"sid": 119016992969362
+								},
+								{
+									"id": "set-text",
+									"objectClass": "RTPGameTxt",
+									"sid": 921013539966201,
+									"parameters": {
+										"text": "RandomUnsafe"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 774608771706766,
+									"parameters": {
+										"object-to-create": "RTPGateBottom",
+										"layer": "0",
+										"x": "1300",
+										"y": "550",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "RTPGateBottom",
+									"sid": 741938717851803,
+									"parameters": {
+										"instance-variable": "isSafe",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "RTPGameTxt2",
+									"sid": 514450306282622,
+									"parameters": {
+										"text": "RandomSafe"
+									}
+								}
+							],
+							"sid": 446127440777819
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "RTPGateTop",
+							"sid": 412973504245365
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "RTPGameTxt",
+							"sid": 350842092948730,
+							"parameters": {
+								"x": "RTPGateTop.X",
+								"y": "RTPGateTop.Y"
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "RTPGameTxt",
+							"sid": 747650442869528,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "RTPGateTop",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 121266235040776
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "RTPGateBottom",
+							"sid": 895626875767794
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "RTPGameTxt2",
+							"sid": 495447117697356,
+							"parameters": {
+								"x": "RTPGateBottom.X",
+								"y": "RTPGateBottom.Y"
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "RTPGameTxt2",
+							"sid": 860336853572516,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "RTPGateBottom",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 495363169556918
+				}
+			],
+			"sid": 155773002584763
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Drone",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 736583280195760,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-vector-y",
+							"objectClass": "RTPGameDron",
+							"sid": 935945683275095,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "-600"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 857629756271175,
+							"parameters": {
+								"audio-file": {
+									"path": "Rooftop/RTPDrone Sound"
+								},
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 677420494275945
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 659363284140927
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "RTPGameDron",
+							"sid": 161863974023571,
+							"parameters": {
+								"angle": "Self.Platform.VectorY / 10"
+							}
+						}
+					],
+					"sid": 417323982450828
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "RTPGameDron",
+							"sid": 938151546897775,
+							"parameters": {
+								"object": "RTPGateTop"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 381384388918219,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "RTPGateTop",
+									"sid": 711662127623613,
+									"parameters": {
+										"instance-variable": "isSafe"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "RTPGateTop",
+									"sid": 552794249044028
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 156725801564438,
+									"parameters": {
+										"variable": "RTPScore",
+										"value": "1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 666515809909042,
+									"parameters": {
+										"audio-file": {
+											"path": "Rooftop/RTPpoint"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 617312977141636
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 357618314457605
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 162683582176956,
+									"parameters": {
+										"layout": "RTPStart"
+									}
+								}
+							],
+							"sid": 260221271484718
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "RTPGameDron",
+							"sid": 207974596740514,
+							"parameters": {
+								"object": "RTPGateBottom"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 244404112623931,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "RTPGateBottom",
+									"sid": 655815515671551,
+									"parameters": {
+										"instance-variable": "isSafe"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "RTPGateBottom",
+									"sid": 533069345569640
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 978038443731539,
+									"parameters": {
+										"variable": "RTPScore",
+										"value": "1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 457221728039515,
+									"parameters": {
+										"audio-file": {
+											"path": "Rooftop/RTPpoint"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 447727487394452
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 258418933085280
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 123634579917427,
+									"parameters": {
+										"layout": "RTPStart"
+									}
+								}
+							],
+							"sid": 290306433444992
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "RTPGameDron",
+							"sid": 239544114386574,
+							"parameters": {
+								"comparison": 2,
+								"y-co-ordinate": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 386286219246763,
+							"parameters": {
+								"layout": "RTPStart"
+							}
+						}
+					],
+					"sid": 816219664654009
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "RTPGameDron",
+							"sid": 104120788720959,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "720"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 972963725298804,
+							"parameters": {
+								"layout": "RTPStart"
+							}
+						}
+					],
+					"sid": 106700120487434
+				}
+			],
+			"sid": 946536490095402
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 985578601981910
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 279625505169096,
+					"parameters": {
+						"variable": "RTPScore",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RTPResultPanel",
+					"sid": 613790776898334,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RTPYouWon",
+					"sid": 409838092999437,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RTPWinMessage",
+					"sid": 555458250946501,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 756557109857019,
+					"parameters": {
+						"audio-file": {
+							"path": "Rooftop/RTPhunted-28148"
+						},
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"MainSong\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 800096908405781,
+					"parameters": {
+						"tag": "\"RTPmain\""
+					}
+				}
+			],
+			"sid": 606008490807457
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "RTPGameTxt",
+					"sid": 147720766520769,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "300"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "InstructionTXT",
+					"sid": 304218423712407
+				}
+			],
+			"sid": 758379037162522
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "RTPGateTop",
+					"sid": 282461462614555,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "-300"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RTPGateTop",
+					"sid": 474830827685171
+				}
+			],
+			"sid": 708582889999274
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "RTPGateBottom",
+					"sid": 981929842914747,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "-300"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RTPGateBottom",
+					"sid": 336426157405399
+				}
+			],
+			"sid": 697041145448994
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 325984439165872
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "RTPGateTop",
+					"sid": 123618114970315,
+					"parameters": {
+						"x": "Self.X - (200 * dt)"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "RTPGateBottom",
+					"sid": 335804219167294,
+					"parameters": {
+						"x": "Self.X - (200 * dt)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "RTPScoretxt",
+					"sid": 533079243988922,
+					"parameters": {
+						"text": "\"Score: \" & RTPScore"
+					}
+				}
+			],
+			"sid": 890069585287552
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Check for the win",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 989843293400096,
+							"parameters": {
+								"variable": "RTPScore",
+								"comparison": 5,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "RTPYouWon",
+							"sid": 641538097067653,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "RTPWinMessage",
+							"sid": 286764019540619,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 644279190405060,
+							"parameters": {
+								"group-name": "\"Main\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 887143779197596,
+							"parameters": {
+								"group-name": "\"Drone\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "RTPResultPanel",
+							"sid": 168424565087283,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 504297279781359,
+							"parameters": {
+								"tag": "\"MainSong\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 672732651825770,
+							"parameters": {
+								"audio-file": {
+									"path": "Rooftop/RTPvictory"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 299585250395056
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 258483289807147,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "RTPResultPanel",
+							"sid": 158536858159425
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 451301180261745,
+							"parameters": {
+								"layout": "RTPStart"
+							}
+						}
+					],
+					"sid": 870152820551716
+				}
+			],
+			"sid": 556779527534335
+		}
+	],
+	"sid": 419824031782639
+}

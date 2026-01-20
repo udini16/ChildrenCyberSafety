@@ -1,0 +1,56 @@
+{
+	"name": "RTPRulesBox",
+	"plugin-id": "Sprite",
+	"sid": 715380760897208,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 494,
+						"height": 265,
+						"originX": 0.5,
+						"originY": 0.5207547169811321,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4180242,
+						"collisionPoly": {
+							"points": [
+								0.305668016194332,
+								0.007547169811320755,
+								0.9959514170040485,
+								0.05660377358490566,
+								0.9777327935222672,
+								0.9924528301886792,
+								0.8765182186234818,
+								0.9962264150943396,
+								0.0020242914979757085,
+								0.9509433962264151,
+								0.018218623481781375,
+								0.03773584905660377
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 689956456379362,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

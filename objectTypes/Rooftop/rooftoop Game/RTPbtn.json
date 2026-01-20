@@ -1,0 +1,52 @@
+{
+	"name": "RTPbtn",
+	"plugin-id": "Sprite",
+	"sid": 441118336675689,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 528,
+						"height": 99,
+						"originX": 0.5,
+						"originY": 0.5858585858585859,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6352188,
+						"collisionPoly": {
+							"points": [
+								0.020833333333333332,
+								0.010101010101010102,
+								0.9981060606060606,
+								0.10101010101010101,
+								0.9659090909090909,
+								0.9797979797979798,
+								0.001893939393939394,
+								0.8484848484848485
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 542925002279398,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
