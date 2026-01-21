@@ -472,7 +472,7 @@
 				{
 					"type": "RTPYouWon",
 					"properties": {
-						"text": "YOUI WON",
+						"text": "YOU WON",
 						"enable-bbcode": true,
 						"font": "ROG Fonts",
 						"size": 40,

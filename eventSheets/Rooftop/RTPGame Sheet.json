@@ -795,12 +795,17 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 989843293400096,
+							"sid": 309412926290825,
 							"parameters": {
 								"variable": "RTPScore",
 								"comparison": 5,
-								"value": "2"
+								"value": "5"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 255290581491162
 						}
 					],
 					"actions": [

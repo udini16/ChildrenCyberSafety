@@ -1,0 +1,32 @@
+{
+	"name": "InstructionSheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 777374419003008,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ProceedButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 756879746229863,
+					"parameters": {
+						"layout": "OutsideGame"
+					}
+				}
+			],
+			"sid": 924542590024479
+		}
+	],
+	"sid": 581354484054799
+}

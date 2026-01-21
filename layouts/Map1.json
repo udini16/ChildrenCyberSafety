@@ -237,7 +237,13 @@
 					"uid": 61,
 					"sid": 665725441215115,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Message": "Hi, please find a guy that wearing a white shirt and red tie to do the challenge!",
+						"TargetLayout": "ChallengeOutside",
+						"TalkState": 0,
+						"isTalking": false,
+						"ID": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 665725441215115,

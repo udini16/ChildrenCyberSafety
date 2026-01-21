@@ -85,6 +85,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
 			"author": "Scirra",
@@ -94,6 +101,20 @@
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -159,7 +180,13 @@
 			"ResultPanelGame3",
 			"StartButton",
 			"Audio",
-			"RTPInteract2"
+			"RTPInteract2",
+			"playerHealth",
+			"bossHealth",
+			"win",
+			"playAgainButton",
+			"menuButton",
+			"lose"
 		],
 		"subfolders": [
 			{
@@ -228,6 +255,22 @@
 					}
 				],
 				"name": "Game3Object"
+			},
+			{
+				"items": [
+					"wallpaper",
+					"opacity",
+					"Sprite4",
+					"title",
+					"PlayButton",
+					"ProceedButton",
+					"withPlatform",
+					"wallSensor",
+					"blackman",
+					"boss"
+				],
+				"subfolders": [],
+				"name": "OutsideChallenge"
 			}
 		]
 	},
@@ -274,7 +317,6 @@
 			"Map1",
 			"Challenge1",
 			"StartLayout",
-			"Layout 2",
 			"Map3",
 			"Challenge3"
 		],
@@ -288,6 +330,16 @@
 				],
 				"subfolders": [],
 				"name": "Rooftop"
+			},
+			{
+				"items": [
+					"OutsideLayout",
+					"ChallengeOutside",
+					"OutsideInstruction",
+					"OutsideGame"
+				],
+				"subfolders": [],
+				"name": "Outside"
 			}
 		]
 	},
@@ -310,6 +362,15 @@
 				],
 				"subfolders": [],
 				"name": "Rooftop"
+			},
+			{
+				"items": [
+					"ChallengeOutSheet",
+					"InstructionSheet",
+					"OutsideGameSheet"
+				],
+				"subfolders": [],
+				"name": "Outside"
 			}
 		]
 	},
@@ -319,7 +380,48 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "clash.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 582187670333787,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "backgroundSound.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 386104211983445,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "win.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 712201564199684,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "start.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 558547901118413,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "lose.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 418972966859099,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": [
 				{
 					"items": [

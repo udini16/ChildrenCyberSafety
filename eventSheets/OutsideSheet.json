@@ -299,9 +299,9 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "Player",
-							"sid": 446278436405753,
+							"sid": 359346633744922,
 							"parameters": {
-								"object": "NPCGame1"
+								"object": "NPCGame3"
 							}
 						}
 					],
@@ -313,8 +313,8 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "NPCGame1",
-									"sid": 875027842240193,
+									"objectClass": "NPCGame3",
+									"sid": 719151948651078,
 									"parameters": {
 										"instance-variable": "TalkState",
 										"comparison": 0,
@@ -342,15 +342,15 @@
 								{
 									"id": "set-text",
 									"objectClass": "DialogText",
-									"sid": 485261631220901,
+									"sid": 315357732459456,
 									"parameters": {
-										"text": "NPCGame1.Message & newline & \"[Press E]\""
+										"text": "NPCGame3.Message & newline & \"[Press E]\""
 									}
 								},
 								{
 									"id": "set-instvar-value",
-									"objectClass": "NPCGame1",
-									"sid": 394109386487318,
+									"objectClass": "NPCGame3",
+									"sid": 122620662611840,
 									"parameters": {
 										"instance-variable": "TalkState",
 										"value": "1"
@@ -358,8 +358,8 @@
 								},
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "NPCGame1",
-									"sid": 652647407769339,
+									"objectClass": "NPCGame3",
+									"sid": 473921685355694,
 									"parameters": {
 										"instance-variable": "isTalking",
 										"value": "true"
@@ -373,8 +373,8 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "NPCGame1",
-									"sid": 540017307614879,
+									"objectClass": "NPCGame3",
+									"sid": 395874841782613,
 									"parameters": {
 										"instance-variable": "TalkState",
 										"comparison": 0,
@@ -386,9 +386,9 @@
 								{
 									"id": "set-text",
 									"objectClass": "DialogText",
-									"sid": 528764929330212,
+									"sid": 335340525983269,
 									"parameters": {
-										"text": "\"Are you ready for the challenge? (Press Q to Accept)\""
+										"text": "\"Hello there, are you ready for the challenge? (Press Q to Accept)\""
 									}
 								}
 							],
@@ -410,15 +410,15 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "Player",
-							"sid": 592943489464663,
+							"sid": 738162524701873,
 							"parameters": {
-								"object": "NPCGame1"
+								"object": "NPCGame3"
 							}
 						},
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "NPCGame1",
-							"sid": 263757851414437,
+							"objectClass": "NPCGame3",
+							"sid": 558100007976469,
 							"parameters": {
 								"instance-variable": "TalkState",
 								"comparison": 0,
@@ -456,8 +456,8 @@
 						},
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "NPCGame1",
-							"sid": 548557856760713,
+							"objectClass": "NPCGame3",
+							"sid": 115720260490793,
 							"parameters": {
 								"instance-variable": "isTalking",
 								"value": "false"
@@ -465,8 +465,8 @@
 						},
 						{
 							"id": "set-instvar-value",
-							"objectClass": "NPCGame1",
-							"sid": 318051833324783,
+							"objectClass": "NPCGame3",
+							"sid": 180348294205031,
 							"parameters": {
 								"instance-variable": "TalkState",
 								"value": "0"
@@ -475,9 +475,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 800536984444539,
+							"sid": 266253122412530,
 							"parameters": {
-								"layout": "Challenge1"
+								"layout": "ChallengeOutside"
 							}
 						}
 					],
@@ -489,9 +489,9 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "Player",
-							"sid": 782195812650175,
+							"sid": 833222514580161,
 							"parameters": {
-								"object": "NPCGame1"
+								"object": "NPCGame3"
 							},
 							"isInverted": true
 						}
@@ -515,8 +515,8 @@
 						},
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "NPCGame1",
-							"sid": 735462051541994,
+							"objectClass": "NPCGame3",
+							"sid": 454290945980952,
 							"parameters": {
 								"instance-variable": "isTalking",
 								"value": "false"
@@ -524,8 +524,8 @@
 						},
 						{
 							"id": "set-instvar-value",
-							"objectClass": "NPCGame1",
-							"sid": 132691408632365,
+							"objectClass": "NPCGame3",
+							"sid": 591606576427910,
 							"parameters": {
 								"instance-variable": "TalkState",
 								"value": "0"
@@ -536,6 +536,330 @@
 				}
 			],
 			"sid": 752732627432759
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 541852026893853,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 800563247104312,
+					"parameters": {
+						"object": "NPC3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 306828345959761,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "NPC3",
+							"sid": 545827121732727,
+							"parameters": {
+								"instance-variable": "TalkState",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DialogBox2Game3",
+							"sid": 981510904146306,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DialogText2Game3",
+							"sid": 655146406476542,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DialogText2Game3",
+							"sid": 610366573311913,
+							"parameters": {
+								"text": "NPC3.Message & newline & \"[Press E]\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "NPC3",
+							"sid": 313037057215729,
+							"parameters": {
+								"instance-variable": "TalkState",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "NPC3",
+							"sid": 996844998801399,
+							"parameters": {
+								"instance-variable": "isTalking",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 394951331621851
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "NPC3",
+							"sid": 900040308045383,
+							"parameters": {
+								"instance-variable": "TalkState",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "DialogText2Game3",
+							"sid": 571656686984673,
+							"parameters": {
+								"text": "\"Hello, how are you? If you want to do the challenge, find a guy with red tie standing under a tree.\""
+							}
+						}
+					],
+					"sid": 583575718279437
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 226790633317837,
+					"parameters": {
+						"object": "NPC3"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "DialogBox2Game3",
+					"sid": 710781701299383,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DialogText2Game3",
+					"sid": 118875561897470,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "NPC3",
+					"sid": 892373424039144,
+					"parameters": {
+						"instance-variable": "isTalking",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "NPC3",
+					"sid": 749086752244294,
+					"parameters": {
+						"instance-variable": "TalkState",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 903567209396868
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 804134977179002,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 781119788649233,
+					"parameters": {
+						"object": "NPC4"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 341511149735073,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "NPC4",
+							"sid": 238792837886218,
+							"parameters": {
+								"instance-variable": "TalkState",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DialogBox3Game3",
+							"sid": 974442245360470,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DialogText3Game3",
+							"sid": 451098062245836,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DialogText3Game3",
+							"sid": 873661946307164,
+							"parameters": {
+								"text": "NPC4.Messsage & newline & \"[Press E]\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "NPC4",
+							"sid": 851822940964004,
+							"parameters": {
+								"instance-variable": "TalkState",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "NPC4",
+							"sid": 666462476398696,
+							"parameters": {
+								"instance-variable": "isTalking",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 595026333552124
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "NPC4",
+							"sid": 722873818308761,
+							"parameters": {
+								"instance-variable": "TalkState",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "DialogText3Game3",
+							"sid": 690500915560915,
+							"parameters": {
+								"text": "\"Hello, im probably not the guy that you looking for. Best of luck finding that guy!\""
+							}
+						}
+					],
+					"sid": 967318970992478
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 108748826353999,
+					"parameters": {
+						"object": "NPC4"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "DialogBox3Game3",
+					"sid": 420698876992534,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DialogText3Game3",
+					"sid": 712886171240581,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "NPC4",
+					"sid": 103854637526188,
+					"parameters": {
+						"instance-variable": "isTalking",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "NPC4",
+					"sid": 582958879542860,
+					"parameters": {
+						"instance-variable": "TalkState",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 706870671920323
 		}
 	],
 	"sid": 516053664247285

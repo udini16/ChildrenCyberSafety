@@ -1,0 +1,77 @@
+{
+	"name": "ChallengeOutSheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 265591330410784,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "PlayButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 584154658316662,
+					"parameters": {
+						"layout": "OutsideInstruction"
+					}
+				}
+			],
+			"sid": 918042151630324
+		},
+		{
+			"functionName": "startSong",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 811405678850669,
+					"parameters": {
+						"audio-file": {
+							"path": "start"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"startSong\""
+					}
+				}
+			],
+			"sid": 513532770463721
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 249717098251132
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "startSong",
+					"sid": 208328951748667
+				}
+			],
+			"sid": 235979903075227
+		}
+	],
+	"sid": 366541877950452
+}

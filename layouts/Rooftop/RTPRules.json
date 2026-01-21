@@ -93,7 +93,7 @@
 				{
 					"type": "RTPrulestext",
 					"properties": {
-						"text": "Fly: Left-Click to boost up. Release to fall.\n\nTarget: Fly into Real Links (like https://www.google.com) to score.\n\nAvoid: Don't hit Fake Links (like gooogle.tk)—they are traps!\n\nTO WIN: SCORE 10 POINTS",
+						"text": "Fly: Left-Click to boost up. Release to fall.\n\nTarget: Fly into Real Links (like https://www.google.com) to score.\n\nAvoid: Don't hit Fake Links (like gooogle.tk)—they are traps!\n\nTO WIN: SCORE 5 POINTS",
 						"enable-bbcode": true,
 						"font": "ROG Fonts",
 						"size": 20,

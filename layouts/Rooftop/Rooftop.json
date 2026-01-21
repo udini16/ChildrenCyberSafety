@@ -3474,6 +3474,51 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "solid3",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 112,
+					"sid": 421086186016342,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 421086186016342,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 359.78296785408253,
+						"y": 318.99916991248847,
+						"width": 50.71510671306139,
+						"height": 6.19264427077618,
+						"originX": 0.7,
+						"originY": 0.2,
+						"color": [
+							1,
+							1,
+							1,
+							0.7
+						],
+						"angle": 4.713976242319641,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 783767954218622,

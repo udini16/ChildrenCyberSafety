@@ -1,0 +1,1813 @@
+{
+	"name": "OutsideGameSheet",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player6",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-floor",
+							"objectClass": "blackman",
+							"sid": 141668937598481,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "blackman",
+							"sid": 806835455098374,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "blackman",
+							"sid": 282005471814625,
+							"parameters": {
+								"instance-variable": "isAttacking"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "blackman",
+							"sid": 157236148699976,
+							"parameters": {
+								"instance-variable": "isLanding"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "blackman",
+							"sid": 631373446621368,
+							"parameters": {
+								"instance-variable": "isDefending"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "blackman",
+							"sid": 520353568807859,
+							"parameters": {
+								"animation": "\"run\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 478731107425948
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-floor",
+							"objectClass": "blackman",
+							"sid": 228905331271707,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "blackman",
+							"sid": 679640598770108,
+							"behaviorType": "Platform",
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "blackman",
+							"sid": 747648187605514,
+							"parameters": {
+								"instance-variable": "isAttacking"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "blackman",
+							"sid": 228364336413493,
+							"parameters": {
+								"instance-variable": "isDefending"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "blackman",
+							"sid": 723696622015538,
+							"parameters": {
+								"instance-variable": "isLanding"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "blackman",
+							"sid": 334096210279519,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 399913976973774
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 793787446747797,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "blackman",
+							"sid": 950448254075616,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 441785218827669
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 577507402123515,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "blackman",
+							"sid": 162763423398365,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 662242095226783
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-jump",
+							"objectClass": "blackman",
+							"sid": 112977986694744,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "blackman",
+							"sid": 482278659140575,
+							"parameters": {
+								"animation": "\"jump\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 248131630912269
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "blackman",
+							"sid": 961656364192414,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "blackman",
+							"sid": 157673482508882,
+							"parameters": {
+								"instance-variable": "isLanding",
+								"value": "true"
+							}
+						},
+						{
+							"id": "start-timer",
+							"objectClass": "blackman",
+							"sid": 212091849426858,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "0.5",
+								"type": "once",
+								"tag": "\"LandTimer\""
+							}
+						}
+					],
+					"sid": 181548797208873
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-timer",
+							"objectClass": "blackman",
+							"sid": 319157189877024,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"LandTimer\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "blackman",
+							"sid": 901790405351048,
+							"parameters": {
+								"instance-variable": "isLanding",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 143931243087054
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 563719245587142,
+							"parameters": {
+								"key": 90
+							}
+						},
+						{
+							"id": "is-on-floor",
+							"objectClass": "blackman",
+							"sid": 537341683255944,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "blackman",
+							"sid": 914503704404406,
+							"parameters": {
+								"instance-variable": "isAttacking"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "blackman",
+							"sid": 291747173687851,
+							"parameters": {
+								"instance-variable": "isAttacking",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "blackman",
+							"sid": 730927219859731,
+							"parameters": {
+								"animation": "\"attack1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 685256188166424
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "blackman",
+							"sid": 765855805669601,
+							"parameters": {
+								"animation": "\"attack1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "blackman",
+							"sid": 727253141798717,
+							"parameters": {
+								"instance-variable": "isAttacking",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 436936209425406
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 616737303510078,
+							"parameters": {
+								"key": 88
+							}
+						},
+						{
+							"id": "is-on-floor",
+							"objectClass": "blackman",
+							"sid": 636803657232112,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "blackman",
+							"sid": 319214048887828,
+							"parameters": {
+								"instance-variable": "isAttacking"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "blackman",
+							"sid": 376880179677280,
+							"parameters": {
+								"instance-variable": "isAttacking",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "blackman",
+							"sid": 587620424177139,
+							"parameters": {
+								"animation": "\"attack2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 326055323682300
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "blackman",
+							"sid": 505486260801334,
+							"parameters": {
+								"animation": "\"attack2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "blackman",
+							"sid": 195616395516687,
+							"parameters": {
+								"instance-variable": "isAttacking",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 759850848172806
+				}
+			],
+			"sid": 924158276910680
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Boss",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 448337636448158,
+							"parameters": {
+								"interval-seconds": "1.5"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 203805755933183,
+							"parameters": {
+								"first-value": "distance(blackman.X, blackman.Y, boss.X, boss.Y)",
+								"comparison": 2,
+								"second-value": "300"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "boss",
+							"sid": 387164531842115,
+							"parameters": {
+								"instance-variable": "isAttacking"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "start-timer",
+							"objectClass": "boss",
+							"sid": 734959237666858,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "0.1",
+								"type": "once",
+								"tag": "\"DecisionTime\""
+							}
+						}
+					],
+					"sid": 175255919460720
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-timer",
+							"objectClass": "boss",
+							"sid": 259176535637497,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"DecisionTime\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "boss",
+							"sid": 786951365128102,
+							"parameters": {
+								"instance-variable": "isAttacking",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "boss",
+							"sid": 514044725696496,
+							"parameters": {
+								"animation": "\"attack\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 775160686517949,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 802383665006709,
+									"parameters": {
+										"first-value": "blackman.X",
+										"comparison": 4,
+										"second-value": "boss.X"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 424526399301073,
+									"parameters": {
+										"first-value": "blackman.X",
+										"comparison": 2,
+										"second-value": "boss.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "boss",
+									"sid": 407898064207316,
+									"parameters": {
+										"state": "mirrored"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "boss",
+									"sid": 200184244183455,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 782322236278975
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-any-animation-finished",
+							"objectClass": "boss",
+							"sid": 140319299854829
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "boss",
+							"sid": 435101700680726,
+							"parameters": {
+								"instance-variable": "isAttacking",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 105288455454074
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "boss",
+							"sid": 895951545580930,
+							"parameters": {
+								"instance-variable": "isAttacking"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 961098566944449,
+							"parameters": {
+								"first-value": "blackman.X",
+								"comparison": 4,
+								"second-value": "boss.X + 80"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "boss",
+							"sid": 623021853823207,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "boss",
+							"sid": 556310920899194,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "boss",
+							"sid": 352832428070203,
+							"parameters": {
+								"animation": "\"run\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 852615989233255
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "boss",
+							"sid": 781561150307835,
+							"parameters": {
+								"instance-variable": "isAttacking"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 654936364433997,
+							"parameters": {
+								"first-value": "blackman.X",
+								"comparison": 2,
+								"second-value": "boss.X - 80"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "boss",
+							"sid": 620779730059198,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "boss",
+							"sid": 873145529220297,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "boss",
+							"sid": 867265451707186,
+							"parameters": {
+								"animation": "\"run\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 913122429332825
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-floor",
+							"objectClass": "boss",
+							"sid": 865573282229558,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "boss",
+							"sid": 403873064406032,
+							"behaviorType": "Platform",
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "boss",
+							"sid": 426222587960897,
+							"parameters": {
+								"instance-variable": "isAttacking"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "boss",
+							"sid": 919167101396877,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 631715630009543
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "wallSensor",
+							"sid": 782960873095774,
+							"parameters": {
+								"object": "Sprite"
+							}
+						},
+						{
+							"id": "is-on-floor",
+							"objectClass": "boss",
+							"sid": 545620736422611,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "boss",
+							"sid": 603446221236898,
+							"parameters": {
+								"instance-variable": "isAttacking"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "blackman",
+							"sid": 960790554277995,
+							"parameters": {
+								"comparison": 2,
+								"y-co-ordinate": "boss.Y - 30"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "boss",
+							"sid": 480514843737621,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "boss",
+							"sid": 793064340714296,
+							"parameters": {
+								"animation": "\"run\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "boss",
+							"sid": 246032993940415,
+							"parameters": {
+								"instance-variable": "isAttacking",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 813034309627774
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "boss",
+							"sid": 161792113655968,
+							"parameters": {
+								"animation": "\"run\""
+							}
+						},
+						{
+							"id": "is-on-floor",
+							"objectClass": "boss",
+							"sid": 500585360330496,
+							"behaviorType": "Platform",
+							"isInverted": true
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "blackman",
+							"sid": 345750931542876,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "boss.X"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "boss",
+							"sid": 445358390828181,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 781667857798932
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "boss",
+							"sid": 368067077667909,
+							"parameters": {
+								"animation": "\"run\""
+							}
+						},
+						{
+							"id": "is-on-floor",
+							"objectClass": "boss",
+							"sid": 113985227054160,
+							"behaviorType": "Platform",
+							"isInverted": true
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "blackman",
+							"sid": 474474723797212,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "boss.X"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "boss",
+							"sid": 819394602618361,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 656338317063984
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "boss",
+							"sid": 622743001210216,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "boss",
+							"sid": 115509552672248,
+							"parameters": {
+								"animation": "\"run\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "boss",
+							"sid": 915847756861864,
+							"parameters": {
+								"instance-variable": "isAttacking",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 802239417610233
+				}
+			],
+			"sid": 197028794337287
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Combat",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "blackman",
+							"sid": 606803638248968,
+							"parameters": {
+								"object": "boss"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 951759549477254
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "boss",
+							"sid": 996069390278080,
+							"parameters": {
+								"instance-variable": "isHurt"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 847705089055874,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "blackman",
+									"sid": 467970317475333,
+									"parameters": {
+										"animation": "\"attack1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "DamageBoss",
+									"sid": 561074610886282
+								},
+								{
+									"callFunction": "Clash",
+									"sid": 859118248024523
+								}
+							],
+							"sid": 960423545751438
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "blackman",
+									"sid": 676059746122119,
+									"parameters": {
+										"animation": "\"attack2\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "DamageBoss",
+									"sid": 855434874455107
+								},
+								{
+									"callFunction": "Clash",
+									"sid": 852853895942214
+								}
+							],
+							"sid": 797750330330485
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "boss",
+							"sid": 106573172798144,
+							"parameters": {
+								"object": "blackman"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 783378916697148
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "blackman",
+							"sid": 274288929999902,
+							"parameters": {
+								"instance-variable": "isHurt"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 252842492483978,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "boss",
+									"sid": 412166704793314,
+									"parameters": {
+										"animation": "\"attack\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "DamagePlayer",
+									"sid": 259971552586397
+								},
+								{
+									"callFunction": "Clash",
+									"sid": 557678449286622
+								}
+							],
+							"sid": 596179244396239
+						}
+					]
+				},
+				{
+					"functionName": "UpdateUI",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "playerHealth",
+							"sid": 458260558897916,
+							"parameters": {
+								"frame-number": "clamp(5 - blackman.Health, 0, 5)"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "bossHealth",
+							"sid": 299002704227792,
+							"parameters": {
+								"frame-number": "clamp(5 - boss.Health, 0, 5)"
+							}
+						}
+					],
+					"sid": 738855688414249
+				},
+				{
+					"functionName": "DamageBoss",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "boss",
+							"sid": 738551301563359,
+							"parameters": {
+								"instance-variable": "isHurt",
+								"value": "true"
+							}
+						},
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "boss",
+							"sid": 273389342818053,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "1"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "boss",
+							"sid": 930706308404574,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "0.5"
+							}
+						},
+						{
+							"callFunction": "UpdateUI",
+							"sid": 607576778710929
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "boss",
+							"sid": 705601957614459,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "start-timer",
+							"objectClass": "boss",
+							"sid": 783083917752326,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "1.0",
+								"type": "once",
+								"tag": "\"HurtTimer\""
+							}
+						}
+					],
+					"sid": 320850410259950,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "boss",
+									"sid": 756389483306940,
+									"parameters": {
+										"comparison": 2,
+										"x-co-ordinate": "blackman.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-x",
+									"objectClass": "boss",
+									"sid": 175820604665428,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "-300"
+									}
+								}
+							],
+							"sid": 589541138520287
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "boss",
+									"sid": 310348846872167,
+									"parameters": {
+										"comparison": 4,
+										"x-co-ordinate": "blackman.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-x",
+									"objectClass": "boss",
+									"sid": 194405301483751,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "300"
+									}
+								}
+							],
+							"sid": 683367231852803
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-timer",
+							"objectClass": "boss",
+							"sid": 458906746909663,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"HurtTimer\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "boss",
+							"sid": 540598298825029,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "boss",
+							"sid": 595504710728381,
+							"parameters": {
+								"instance-variable": "isHurt",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 122125876827515
+				},
+				{
+					"functionName": "DamagePlayer",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "blackman",
+							"sid": 208541408799259,
+							"parameters": {
+								"instance-variable": "isHurt",
+								"value": "true"
+							}
+						},
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "blackman",
+							"sid": 283752505171189,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "1"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "blackman",
+							"sid": 919307076762853,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "0.5"
+							}
+						},
+						{
+							"callFunction": "UpdateUI",
+							"sid": 632454736254592
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "blackman",
+							"sid": 871971252847561,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "start-timer",
+							"objectClass": "blackman",
+							"sid": 359053633638639,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "1.0",
+								"type": "once",
+								"tag": "\"HurtTimer\""
+							}
+						}
+					],
+					"sid": 769647336888405,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "blackman",
+									"sid": 843450696396373,
+									"parameters": {
+										"comparison": 2,
+										"x-co-ordinate": "boss.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-x",
+									"objectClass": "blackman",
+									"sid": 506489672055782,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "-300"
+									}
+								}
+							],
+							"sid": 651758771400978
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "blackman",
+									"sid": 944955844101748,
+									"parameters": {
+										"comparison": 4,
+										"x-co-ordinate": "boss.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-x",
+									"objectClass": "blackman",
+									"sid": 566357595679553,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "300"
+									}
+								}
+							],
+							"sid": 619860705033470
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-timer",
+							"objectClass": "blackman",
+							"sid": 912382094789390,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"HurtTimer\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "blackman",
+							"sid": 355874424047554,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "blackman",
+							"sid": 561229076055630,
+							"parameters": {
+								"instance-variable": "isHurt",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 948812595897261
+				}
+			],
+			"sid": 997267381061752
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Win/Lose",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "blackman",
+							"sid": 951121420340750,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 3,
+								"value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 554576677983417
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "blackman",
+							"sid": 523614885479681,
+							"parameters": {
+								"animation": "\"dead\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 218080760757011,
+							"parameters": {
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 485297728006576,
+							"parameters": {
+								"tag": "\"backgroundSound\""
+							}
+						},
+						{
+							"callFunction": "Lose",
+							"sid": 933180361855595
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 988535597920143,
+							"parameters": {
+								"layer": "\"UIPopup\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "lose",
+							"sid": 798144933377924,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text2",
+							"sid": 485699274695470,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "menuButton",
+							"sid": 903853123730718,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "playAgainButton",
+							"sid": 491101196320562,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 620948790964021
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "boss",
+							"sid": 239007472812742,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 3,
+								"value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 710345425132929
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "boss",
+							"sid": 833963395986242,
+							"parameters": {
+								"animation": "\"dead\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 334686715836594,
+							"parameters": {
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 181691348262673,
+							"parameters": {
+								"tag": "\"backgroundSound\""
+							}
+						},
+						{
+							"callFunction": "Win",
+							"sid": 294779888633573
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 924231944371139,
+							"parameters": {
+								"layer": "\"UIPopup\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "win",
+							"sid": 999617264791720,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text2",
+							"sid": 905909205739139,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "menuButton",
+							"sid": 509540701195069,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "playAgainButton",
+							"sid": 190248955572971,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ProceedButton",
+							"sid": 772798896294622,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite4",
+							"sid": 428287090311205,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "title",
+							"sid": 280104513034626,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 555235617152088
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 240873240191900,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "playAgainButton"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 111555052639848,
+							"parameters": {
+								"time-scale": "1.0"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 547324848437535,
+							"parameters": {
+								"layout": "OutsideGame"
+							}
+						}
+					],
+					"sid": 507447703141584
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 921560150030907,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "menuButton"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 577002700734431,
+							"parameters": {
+								"time-scale": "1.0"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 958810871991210,
+							"parameters": {
+								"layout": "ChallengeOutside"
+							}
+						}
+					],
+					"sid": 179502699893545
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 306400403553884,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ProceedButton"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 888226249561690,
+							"parameters": {
+								"layout": "OutsideLayout"
+							}
+						}
+					],
+					"sid": 512782520389144
+				}
+			],
+			"sid": 969013828463844
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Music",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "MusicBackground",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 538146593611588,
+							"parameters": {
+								"audio-file": {
+									"path": "backgroundSound"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"backgroundSound\""
+							}
+						}
+					],
+					"sid": 335394393711661
+				},
+				{
+					"functionName": "Win",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 474369334770094,
+							"parameters": {
+								"audio-file": {
+									"path": "win"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"win\""
+							}
+						}
+					],
+					"sid": 254879602471932
+				},
+				{
+					"functionName": "Lose",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 886599492053896,
+							"parameters": {
+								"audio-file": {
+									"path": "lose"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"lose\""
+							}
+						}
+					],
+					"sid": 371251204864784
+				},
+				{
+					"functionName": "Clash",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 170285663674021,
+							"parameters": {
+								"audio-file": {
+									"path": "clash"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"clash\""
+							}
+						}
+					],
+					"sid": 168064519277099
+				}
+			],
+			"sid": 887878061056840
+		}
+	],
+	"sid": 348316464992477
+}
