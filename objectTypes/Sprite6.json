@@ -1,7 +1,7 @@
 {
-	"name": "SafeCloud",
+	"name": "Sprite6",
 	"plugin-id": "Sprite",
-	"sid": 480036288608214,
+	"sid": 227411237382897,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,37 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 370,
-						"height": 193,
-						"originX": 0.44594594594594594,
-						"originY": 0.4844559585492228,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4531700,
-						"collisionPoly": {
-							"points": [
-								0.17672731096855615,
-								0,
-								0.812083289515196,
-								0,
-								1,
-								0,
-								1,
-								1,
-								0,
-								1,
-								0,
-								0
-							]
-						},
+						"imageSpriteId": 4944671,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 784116241434227,
+				"sid": 611884335139156,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

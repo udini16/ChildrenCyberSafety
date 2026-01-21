@@ -1,7 +1,7 @@
 {
-	"name": "SafeCloud",
+	"name": "Challenge1Background",
 	"plugin-id": "Sprite",
-	"sid": 480036288608214,
+	"sid": 624938381769703,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,29 +12,25 @@
 			{
 				"frames": [
 					{
-						"width": 370,
-						"height": 193,
-						"originX": 0.44594594594594594,
-						"originY": 0.4844559585492228,
+						"width": 258,
+						"height": 152,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4531700,
+						"imageSpriteId": 9384747,
 						"collisionPoly": {
 							"points": [
-								0.17672731096855615,
-								0,
-								0.812083289515196,
-								0,
-								1,
-								0,
-								1,
-								1,
-								0,
-								1,
-								0,
-								0
+								0.003875968992248062,
+								0.006578947368421052,
+								0.9961240310077519,
+								0.006578947368421052,
+								0.9961240310077519,
+								0.993421052631579,
+								0.003875968992248062,
+								0.993421052631579
 							]
 						},
 						"useCollisionPoly": true,
@@ -42,7 +38,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 784116241434227,
+				"sid": 178988796561100,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

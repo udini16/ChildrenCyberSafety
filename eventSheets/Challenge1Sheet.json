@@ -448,9 +448,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "ResultText",
-							"sid": 308120576882180,
+							"sid": 682010475788781,
 							"parameters": {
-								"text": "\"MISSION COMPLETE!\n\nPROS (Why you won): Great job! You protected your identity by not sharing secrets !.\n\nCONS (The Risk): That Virus is dangerous! Never talk to strangers online !.\n\n[Press SPACE to Finish]\""
+								"text": "\"LEVEL CLEARED!!\n\nSUCCESS: You trusted the Happy Cloud (Family) with your secret. They will keep you safe\n\nWARNING: Avoid the Angry Cloud next time. That is a Stranger trying to trick you.\n\n(Press SPACE to Finish)\""
 							}
 						}
 					],

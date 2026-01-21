@@ -118,11 +118,11 @@
 					"behaviors": {},
 					"ownData": {
 						"tilemapData": {
-							"width": 45,
-							"height": 45,
-							"max-width": 45,
-							"max-height": 45,
-							"data": "5x0,276,17x0,276,3x230,23x0,345,17x0,345,8x0,345,17x0,345,0,1,17,0,21,37,2x0,21,37,7x0,345,8x0,345,0,1,17,0,21,37,2x0,21,37,7x0,345,0,2,18,0,22,38,2x0,22,38,7x0,345,8x0,345,0,2,18,0,22,38,2x0,22,38,7x0,345,17x0,345,8x0,345,17x0,345,26x0,345,17x0,345,4x0,21,37,2x0,21,37,16x0,345,4x0,21,37,2x0,21,37,7x0,345,4x0,22,38,2x0,22,38,7x0,345,8x0,345,4x0,22,38,2x0,22,38,7x0,345,26x0,345,17x0,345,26x0,345,17x0,345,2x0,240,256,21,37,2x0,21,37,7x0,345,8x0,345,2x0,240,256,21,37,2x0,21,37,7x0,345,4x0,22,38,2x0,22,38,16x0,345,4x0,22,38,2x0,22,38,7x0,345,26x0,345,17x0,345,17x0,345,8x0,345,17x0,345,4x0,21,37,2x0,21,37,7x0,345,8x0,345,4x0,21,37,2x0,21,37,7x0,345,4x0,22,38,2x0,22,38,7x0,345,8x0,345,4x0,22,38,2x0,22,38,7x0,345,17x0,345,8x0,345,17x0,345,15x0,381,397,439,8x0,439,17x0,345,4x0,21,37,2x0,21,37,5x0,382,398,440,8x0,440,4x0,21,37,2x0,21,37,7x0,345,4x0,22,38,2x0,22,38,7x0,441,8x0,441,4x0,22,38,2x0,22,38,7x0,345,17x0,345,8x0,345,17x0,277,17x0,263,8x0,277,20x0,13,29,45,3x0,13,29,45,3x0,13,29,45,30x0,14,30,46,3x0,14,30,46,3x0,14,30,46,30x0,15,31,47,3x0,15,31,47,3x0,15,31,47,30x0,16,32,48,3x0,16,32,48,3x0,16,32,48,4x0,93,109,125,141,2x0,93,109,125,141,2x0,93,109,125,141,10x0,13,29,45,3x0,13,29,45,3x0,13,29,45,4x0,94,110,126,142,2x0,94,110,126,142,2x0,94,110,126,142,10x0,14,30,46,3x0,14,30,46,3x0,14,30,46,4x0,95,111,127,143,2x0,95,111,127,143,2x0,95,111,127,143,10x0,15,31,47,3x0,15,31,47,3x0,15,31,47,4x0,96,112,128,144,2x0,96,112,128,144,2x0,96,112,128,144,10x0,16,32,48,3x0,16,32,48,3x0,16,32,48,30x0,13,29,45,3x0,13,29,45,3x0,13,29,45,30x0,14,30,46,3x0,14,30,46,3x0,14,30,46,95x0,93,109,125,141,125,141,3x0,93,109,125,141,125,141,30x0,94,110,126,110,126,142,3x0,94,110,126,110,126,142,30x0,95,111,127,111,127,143,3x0,95,111,127,111,127,143,10x0,15,31,47,3x0,15,31,47,3x0,15,31,47,5x0,96,112,128,144,128,144,3x0,96,112,128,144,128,144,10x0,16,32,48,3x0,16,32,48,3x0,16,32,48,30x0,9,25,41,3x0,13,29,45,3x0,13,29,45,30x0,10,26,42,3x0,14,30,46,3x0,14,30,46,30x0,11,27,43,3x0,15,31,47,3x0,15,31,47,30x0,12,28,44,3x0,16,32,48,3x0,16,32,48,9x0,158,5x110,174,14x0,13,29,45,3x0,13,29,45,3x0,13,29,45,9x0,159,5x111,175,14x0,14,30,46,3x0,14,30,46,3x0,14,30,46,9x0,102,118,43x0,103,119,11x0"
+							"width": 68,
+							"height": 57,
+							"max-width": 68,
+							"max-height": 57,
+							"data": "5x0,276,17x0,276,3x230,18x0,12x627,5x0,345,17x0,345,8x0,345,12x0,12x627,5x0,345,0,1,17,0,21,37,2x0,21,37,7x0,345,8x0,345,0,1,17,0,21,37,2x0,21,37,2x0,12x627,5x0,345,0,2,18,0,22,38,2x0,22,38,7x0,345,8x0,345,0,2,18,0,22,38,2x0,22,38,2x0,12x627,5x0,345,17x0,345,8x0,345,12x0,12x627,5x0,345,26x0,345,12x0,12x627,5x0,345,4x0,21,37,2x0,21,37,16x0,345,4x0,21,37,2x0,21,37,2x0,12x627,5x0,345,4x0,22,38,2x0,22,38,7x0,345,8x0,345,4x0,22,38,2x0,22,38,2x0,12x627,5x0,345,26x0,345,12x0,12x627,5x0,345,26x0,345,12x0,12x627,5x0,345,2x0,240,256,21,37,2x0,21,37,7x0,345,8x0,345,2x0,240,256,21,37,2x0,21,37,2x0,12x627,5x0,345,4x0,22,38,2x0,22,38,16x0,345,4x0,22,38,2x0,22,38,2x0,12x627,5x0,345,26x0,345,12x0,12x627,5x0,345,17x0,345,8x0,345,12x0,12x627,5x0,345,4x0,21,37,2x0,21,37,7x0,345,8x0,345,4x0,21,37,2x0,21,37,2x0,12x627,5x0,345,4x0,22,38,2x0,22,38,7x0,345,8x0,345,4x0,22,38,2x0,22,38,2x0,12x627,5x0,345,17x0,345,8x0,345,12x0,12x627,5x0,345,15x0,381,397,439,8x0,439,12x0,12x627,5x0,345,4x0,21,37,2x0,21,37,5x0,382,398,440,8x0,440,4x0,21,37,2x0,21,37,2x0,12x627,5x0,345,4x0,22,38,2x0,22,38,7x0,441,8x0,441,4x0,22,38,2x0,22,38,2x0,12x627,5x0,345,17x0,345,8x0,345,12x0,12x627,5x0,277,17x0,263,8x0,277,12x0,12x627,8x0,13,29,45,3x0,13,29,45,3x0,13,29,45,22x0,12x627,8x0,14,30,46,3x0,14,30,46,3x0,14,30,46,22x0,12x627,8x0,15,31,47,3x0,15,31,47,3x0,15,31,47,22x0,12x627,8x0,16,32,48,3x0,16,32,48,3x0,16,32,48,4x0,93,109,125,141,2x0,93,109,125,141,2x0,93,109,125,141,2x0,12x627,8x0,13,29,45,3x0,13,29,45,3x0,13,29,45,4x0,94,110,126,142,2x0,94,110,126,142,2x0,94,110,126,142,2x0,12x627,8x0,14,30,46,3x0,14,30,46,3x0,14,30,46,4x0,95,111,127,143,2x0,95,111,127,143,2x0,95,111,127,143,2x0,12x627,8x0,15,31,47,3x0,15,31,47,3x0,15,31,47,4x0,96,112,128,144,2x0,96,112,128,144,2x0,96,112,128,144,2x0,12x627,8x0,16,32,48,3x0,16,32,48,3x0,16,32,48,22x0,12x627,8x0,13,29,45,3x0,13,29,45,3x0,13,29,45,22x0,12x627,8x0,14,30,46,3x0,14,30,46,3x0,14,30,46,22x0,12x627,45x0,12x627,28x0,93,109,125,141,125,141,3x0,93,109,125,141,125,141,2x0,12x627,28x0,94,110,126,110,126,142,3x0,94,110,126,110,126,142,2x0,12x627,28x0,95,111,127,111,127,143,3x0,95,111,127,111,127,143,2x0,12x627,8x0,15,31,47,3x0,15,31,47,3x0,15,31,47,5x0,96,112,128,144,128,144,3x0,96,112,128,144,128,144,2x0,12x627,8x0,16,32,48,3x0,16,32,48,3x0,16,32,48,22x0,12x627,8x0,9,25,41,3x0,13,29,45,3x0,13,29,45,22x0,12x627,8x0,10,26,42,3x0,14,30,46,3x0,14,30,46,22x0,12x627,8x0,11,27,43,3x0,15,31,47,3x0,15,31,47,22x0,12x627,8x0,12,28,44,3x0,16,32,48,3x0,16,32,48,9x0,158,5x110,174,6x0,12x627,8x0,13,29,45,3x0,13,29,45,3x0,13,29,45,9x0,159,5x111,175,6x0,12x627,8x0,14,30,46,3x0,14,30,46,3x0,14,30,46,9x0,102,118,11x0,12x627,32x0,103,119,11x0,1323x627"
 						},
 						"tile-width": 8,
 						"tile-height": 8,
@@ -140,8 +140,8 @@
 					"world": {
 						"x": 0,
 						"y": 0,
-						"width": 360,
-						"height": 360,
+						"width": 551.797978269909,
+						"height": 461.153728265637,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -352,12 +352,356 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 269.1496305118688,
-						"y": 103.46477068881322,
+						"x": 272.2927027811511,
+						"y": 58.712632885769764,
 						"width": 6.694389442285086,
 						"height": 14.815611014872474,
 						"originX": 0.55,
 						"originY": 0.6086956521739131,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roofnpc9",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 320,
+					"sid": 266525757328214,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 266525757328214,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 335.55865068362283,
+						"y": 238.09356111517596,
+						"width": 6.694389,
+						"height": 14.815611,
+						"originX": 0.5263157894736842,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roofnpc8",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 319,
+					"sid": 870561277786479,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 870561277786479,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 318.6322596864094,
+						"y": 232.64453133031697,
+						"width": 6.694389,
+						"height": 14.815611,
+						"originX": 0.4666666666666667,
+						"originY": 0.4864864864864865,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roofnpc4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 321,
+					"sid": 639004518763693,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 639004518763693,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 351.39866762310436,
+						"y": 280.03433577858743,
+						"width": 6.694389,
+						"height": 14.815611,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roofnpc3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 317,
+					"sid": 112251688641024,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 112251688641024,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 37.57343794566668,
+						"y": 101.93060678746437,
+						"width": 6.694389,
+						"height": 14.815611,
+						"originX": 0.47058823529411764,
+						"originY": 0.5208333333333334,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roofnpc7",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 318,
+					"sid": 103322984365148,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 103322984365148,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 46.47829746833895,
+						"y": 110.01160989397519,
+						"width": 6.694389,
+						"height": 14.815611,
+						"originX": 0.5294117647058824,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roofnpc7",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 322,
+					"sid": 210900217284104,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 210900217284104,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 52.81635019870117,
+						"y": 215.95305451220676,
+						"width": 8.79691655772433,
+						"height": 16.026104350168353,
+						"originX": 0.5294117647058824,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roofnpc6",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 323,
+					"sid": 373463137329406,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 373463137329406,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 21.885573653735207,
+						"y": 216.29141954266154,
+						"width": 10.1629434684545,
+						"height": 16.70911780553321,
+						"originX": 0.46153846153846156,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roofnpc1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 325,
+					"sid": 854680517218578,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 854680517218578,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 39.555432611574474,
+						"y": 203.31391986474173,
+						"width": 8.113903102359359,
+						"height": 18.07514471626361,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -3047,8 +3391,8 @@
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
-						"font": "fonnts.com-Eyad-Al-Samman-Ghibli",
-						"size": 8,
+						"font": "Cooper",
+						"size": 16,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -3080,9 +3424,9 @@
 					"locked": false,
 					"world": {
 						"x": 15.4322850128994,
-						"y": 295.28119196571487,
+						"y": 291.99698000903834,
 						"width": 328.50225692305236,
-						"height": 41.942588933369166,
+						"height": 54.422594368739965,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -3124,6 +3468,78 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "Shield",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "UI_shield",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 65,
+					"sid": 498827670546565,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 498827670546565,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 181,
+						"y": 37,
+						"width": 46.92624999287983,
+						"height": 47.41884781531381,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 209767744840989,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
 	"scene-graphs-folder-root": {
@@ -3133,8 +3549,8 @@
 	"sid": 616658052826759,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1280,
-	"height": 720,
+	"width": 360,
+	"height": 360,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,

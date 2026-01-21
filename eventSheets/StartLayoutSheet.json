@@ -2,6 +2,16 @@
 	"name": "StartLayoutSheet",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "isMuted",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 203366883103630
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -26,6 +36,133 @@
 				}
 			],
 			"sid": 950085388604478
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 950846840675018
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 760251528831943,
+					"parameters": {
+						"audio-file": {
+							"path": "Udini/C418  - Dog - Minecraft Volume Alpha (mp3cut.net)"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 531769207254235
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 624188258408582,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "SpeakerMute"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 809985082184308,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 294984429165446,
+							"parameters": {
+								"variable": "isMuted",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-silent",
+							"objectClass": "Audio",
+							"sid": 986809792678598,
+							"parameters": {
+								"mode": "silent"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 710747365039677,
+							"parameters": {
+								"variable": "isMuted",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "SpeakerMute",
+							"sid": 670099066210718,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 380036826413135
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 885740638455026
+						}
+					],
+					"actions": [
+						{
+							"id": "set-silent",
+							"objectClass": "Audio",
+							"sid": 551292971943141,
+							"parameters": {
+								"mode": "not-silent"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 262434941771389,
+							"parameters": {
+								"variable": "isMuted",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "SpeakerMute",
+							"sid": 187869187043277,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 572273330372841
+				}
+			]
 		}
 	],
 	"sid": 420197276920516

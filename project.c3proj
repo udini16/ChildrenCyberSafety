@@ -186,7 +186,15 @@
 			"win",
 			"playAgainButton",
 			"menuButton",
-			"lose"
+			"lose",
+			"Challenge1Background",
+			"UI_shield",
+			"Sprite5",
+			"TextBox",
+			"textbox1",
+			"Sprite6",
+			"Sprite7",
+			"SpeakerMute"
 		],
 		"subfolders": [
 			{
@@ -468,6 +476,28 @@
 					],
 					"subfolders": [],
 					"name": "Rooftop"
+				},
+				{
+					"items": [
+						{
+							"name": "Tory Lanez - Lavender Sunflower (Instrumental).webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 766575472379215,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "C418  - Dog - Minecraft Volume Alpha (mp3cut.net).webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 795113135508661,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Udini"
 				}
 			]
 		},
@@ -485,6 +515,22 @@
 					"name": "fonnts.com-Eyad-Al-Samman-Ghibli.otf",
 					"type": "application/font-sfnt",
 					"sid": 663092207842457,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Pixel Game.otf",
+					"type": "application/font-sfnt",
+					"sid": 642838776735491,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Pixel Game Extrude.otf",
+					"type": "application/font-sfnt",
+					"sid": 975601722313740,
 					"file-info": {
 						"purpose": "none"
 					}
