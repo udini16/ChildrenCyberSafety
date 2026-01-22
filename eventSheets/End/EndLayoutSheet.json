@@ -12,6 +12,11 @@
 			],
 			"actions": [
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 439963408657176
+				},
+				{
 					"id": "set-animation-frame",
 					"objectClass": "UI_shield",
 					"sid": 585199200981726,

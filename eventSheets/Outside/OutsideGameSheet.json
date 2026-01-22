@@ -1649,9 +1649,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 900807764569953,
+							"sid": 468785484965810,
 							"parameters": {
-								"layout": "EndLayout"
+								"layout": "ChallengeOutside"
 							}
 						}
 					],

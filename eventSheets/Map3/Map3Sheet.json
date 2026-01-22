@@ -12,6 +12,11 @@
 			],
 			"actions": [
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 948662427750258
+				},
+				{
 					"id": "set-layout-scale",
 					"objectClass": "System",
 					"sid": 500803821929923,

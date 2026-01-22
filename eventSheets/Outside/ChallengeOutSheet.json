@@ -66,6 +66,11 @@
 			],
 			"actions": [
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 733022022206700
+				},
+				{
 					"callFunction": "startSong",
 					"sid": 208328951748667
 				}
