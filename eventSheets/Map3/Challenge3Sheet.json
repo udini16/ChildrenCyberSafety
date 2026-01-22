@@ -66,6 +66,20 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 757951608170757,
+					"parameters": {
+						"audio-file": {
+							"path": "minecraft-tnt-explosion"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 487053240055148
@@ -186,6 +200,20 @@
 					"id": "destroy",
 					"objectClass": "Sprite2",
 					"sid": 914160217080743
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 891934067336422,
+					"parameters": {
+						"audio-file": {
+							"path": "shooooot"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				},
 				{
 					"id": "add-to-eventvar",
@@ -523,9 +551,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "ResultText",
-					"sid": 608808590178959,
+					"sid": 801751352711687,
 					"parameters": {
-						"text": "\"MISSION COMPLETE!\n\nPROS (Why you won): You kept your personal data private and stayed safe!\n\nCONS (The Risk): The Black Clouds represented Strangers. Talking to them puts you in danger!\n\n[Press SPACE to Finish]\""
+						"text": "\"MISSION COMPLETE!\n\nPROS (Why you won): You kept your personal data private and stayed safe!\n\nCONS (The Risk): The Virus represented Strangers. Talking to them puts you in danger!\n\n[Press SPACE to Finish]\""
 					}
 				},
 				{

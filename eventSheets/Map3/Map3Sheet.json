@@ -40,6 +40,20 @@
 						"layer": "\"Layer 1\"",
 						"scale": "1"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 360529847439291,
+					"parameters": {
+						"audio-file": {
+							"path": "Map1/C418 - Cat - Minecraft Volume Alpha"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 696126631240866

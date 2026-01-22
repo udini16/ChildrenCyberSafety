@@ -95,7 +95,7 @@
 					"properties": {
 						"text": "Fly: Left-Click to boost up. Release to fall.\n\nTarget: Fly into Real Links (like https://www.google.com) to score.\n\nAvoid: Don't hit Fake Links (like gooogle.tk)—they are traps!\n\nTO WIN: SCORE 5 POINTS",
 						"enable-bbcode": true,
-						"font": "ROG Fonts",
+						"font": "MS Gothic",
 						"size": 20,
 						"line-height": 0,
 						"bold": false,
@@ -148,7 +148,7 @@
 					"properties": {
 						"text": "Rules",
 						"enable-bbcode": true,
-						"font": "ROG Fonts",
+						"font": "MS Gothic",
 						"size": 40,
 						"line-height": -1,
 						"bold": false,
@@ -238,7 +238,7 @@
 					"properties": {
 						"text": "Play",
 						"enable-bbcode": true,
-						"font": "ROG Fonts",
+						"font": "MS Gothic",
 						"size": 30,
 						"line-height": 0,
 						"bold": false,

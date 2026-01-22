@@ -40,6 +40,20 @@
 						"layer": "\"UIShield\"",
 						"scale": "0.25"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 149555580845901,
+					"parameters": {
+						"audio-file": {
+							"path": "Map1/C418 - Cat - Minecraft Volume Alpha"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 927772693512051

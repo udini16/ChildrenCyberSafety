@@ -178,10 +178,10 @@
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
-						"font": "ROG Fonts",
-						"size": 16,
+						"font": "MS Gothic",
+						"size": 20,
 						"line-height": 0,
-						"bold": false,
+						"bold": true,
 						"italic": false,
 						"color": [
 							0,
@@ -237,10 +237,10 @@
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
-						"font": "ROG Fonts",
-						"size": 16,
+						"font": "MS Gothic",
+						"size": 20,
 						"line-height": 0,
-						"bold": false,
+						"bold": true,
 						"italic": false,
 						"color": [
 							0,
@@ -276,7 +276,7 @@
 					"locked": false,
 					"world": {
 						"x": 1588,
-						"y": 457,
+						"y": 469,
 						"width": 469,
 						"height": 245,
 						"originX": 0.5,
@@ -296,10 +296,10 @@
 					"properties": {
 						"text": "score: 0",
 						"enable-bbcode": true,
-						"font": "ROG Fonts",
-						"size": 20,
+						"font": "MS Gothic",
+						"size": 25,
 						"line-height": 0,
-						"bold": false,
+						"bold": true,
 						"italic": false,
 						"color": [
 							1,
@@ -328,10 +328,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 38,
-						"y": -21,
+						"x": 48,
+						"y": -24,
 						"width": 268,
-						"height": 103,
+						"height": 114,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -421,11 +421,11 @@
 					"properties": {
 						"text": "PROS (Why you won): You have a sharp eye! By choosing only official domains (like .gov, .edu, or known brands), you kept your computer safe from malware and hackers.\n\nCONS (The Risk): Those \"fake\" links looked almost real! Clicking just one could have allowed a \"Virus\" to steal your passwords or lock your files. \n\nPRESS SPACE TO GO NEXT",
 						"enable-bbcode": true,
-						"font": "ROG Fonts",
+						"font": "MS Gothic",
 						"size": 25,
 						"line-height": 1,
 						"bold": false,
-						"italic": true,
+						"italic": false,
 						"color": [
 							1,
 							1,
@@ -474,7 +474,7 @@
 					"properties": {
 						"text": "YOU WON",
 						"enable-bbcode": true,
-						"font": "ROG Fonts",
+						"font": "MS Gothic",
 						"size": 40,
 						"line-height": 0,
 						"bold": false,

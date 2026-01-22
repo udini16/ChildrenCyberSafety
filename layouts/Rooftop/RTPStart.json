@@ -58,10 +58,10 @@
 					"properties": {
 						"text": "Syntax Escape",
 						"enable-bbcode": true,
-						"font": "ROG Fonts",
-						"size": 60,
+						"font": "MS Gothic",
+						"size": 80,
 						"line-height": 0,
-						"bold": false,
+						"bold": true,
 						"italic": false,
 						"color": [
 							1,
@@ -93,7 +93,7 @@
 						"x": 35,
 						"y": 104,
 						"width": 1187.8435712910816,
-						"height": 91.29462716779159,
+						"height": 131.2946271677916,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -148,10 +148,10 @@
 					"properties": {
 						"text": "PLAY",
 						"enable-bbcode": true,
-						"font": "ROG Fonts",
+						"font": "MS Gothic",
 						"size": 40,
 						"line-height": 0,
-						"bold": false,
+						"bold": true,
 						"italic": false,
 						"color": [
 							1,
