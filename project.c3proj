@@ -194,7 +194,9 @@
 			"textbox1",
 			"Sprite6",
 			"Sprite7",
-			"SpeakerMute"
+			"SpeakerMute",
+			"textboxchallenge1",
+			"Sprite8"
 		],
 		"subfolders": [
 			{
@@ -321,13 +323,7 @@
 		"subfolders": []
 	},
 	"layouts": {
-		"items": [
-			"Map1",
-			"Challenge1",
-			"StartLayout",
-			"Map3",
-			"Challenge3"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -348,18 +344,41 @@
 				],
 				"subfolders": [],
 				"name": "Outside"
+			},
+			{
+				"items": [
+					"Map1",
+					"Challenge1"
+				],
+				"subfolders": [],
+				"name": "Map1"
+			},
+			{
+				"items": [
+					"StartLayout"
+				],
+				"subfolders": [],
+				"name": "Start"
+			},
+			{
+				"items": [
+					"EndLayout"
+				],
+				"subfolders": [],
+				"name": "End"
+			},
+			{
+				"items": [
+					"Map3",
+					"Challenge3"
+				],
+				"subfolders": [],
+				"name": "Map3"
 			}
 		]
 	},
 	"eventSheets": {
-		"items": [
-			"Map1Sheet",
-			"Challenge1Sheet",
-			"StartLayoutSheet",
-			"OutsideSheet",
-			"Map3Sheet",
-			"Challenge3Sheet"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -375,10 +394,41 @@
 				"items": [
 					"ChallengeOutSheet",
 					"InstructionSheet",
-					"OutsideGameSheet"
+					"OutsideGameSheet",
+					"OutsideSheet"
 				],
 				"subfolders": [],
 				"name": "Outside"
+			},
+			{
+				"items": [
+					"Challenge1Sheet",
+					"Map1Sheet"
+				],
+				"subfolders": [],
+				"name": "Map1"
+			},
+			{
+				"items": [
+					"StartLayoutSheet"
+				],
+				"subfolders": [],
+				"name": "Start"
+			},
+			{
+				"items": [
+					"EndLayoutSheet"
+				],
+				"subfolders": [],
+				"name": "End"
+			},
+			{
+				"items": [
+					"Map3Sheet",
+					"Challenge3Sheet"
+				],
+				"subfolders": [],
+				"name": "Map3"
 			}
 		]
 	},
@@ -494,10 +544,26 @@
 							"file-info": {
 								"purpose": "none"
 							}
+						},
+						{
+							"name": "snkneo-geo-insert-coin-sound.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 622533891081465,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "C418 - Cat - Minecraft Volume Alpha.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 148300234383371,
+							"file-info": {
+								"purpose": "none"
+							}
 						}
 					],
 					"subfolders": [],
-					"name": "Udini"
+					"name": "Map1"
 				}
 			]
 		},

@@ -872,6 +872,15 @@
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 248359636092852,
+							"parameters": {
+								"variable": "Achievement_Shield",
+								"value": "3"
+							}
 						}
 					],
 					"sid": 299585250395056

@@ -1,0 +1,27 @@
+{
+	"name": "EndLayoutSheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 532873900104089
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "UI_shield",
+					"sid": 585199200981726,
+					"parameters": {
+						"frame-number": "4"
+					}
+				}
+			],
+			"sid": 102184255256868
+		}
+	],
+	"sid": 123648372780963
+}

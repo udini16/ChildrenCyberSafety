@@ -527,6 +527,15 @@
 					"parameters": {
 						"text": "\"MISSION COMPLETE!\n\nPROS (Why you won): You kept your personal data private and stayed safe!\n\nCONS (The Risk): The Black Clouds represented Strangers. Talking to them puts you in danger!\n\n[Press SPACE to Finish]\""
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 672454538170945,
+					"parameters": {
+						"variable": "Achievement_Shield",
+						"value": "2"
+					}
 				}
 			],
 			"sid": 927473193815958
@@ -561,9 +570,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 352054741602674,
+					"sid": 460988698178411,
 					"parameters": {
-						"layout": "Map3"
+						"layout": "Rooftop"
 					}
 				}
 			],

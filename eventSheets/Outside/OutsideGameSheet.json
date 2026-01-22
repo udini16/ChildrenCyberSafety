@@ -1649,9 +1649,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 958810871991210,
+							"sid": 900807764569953,
 							"parameters": {
-								"layout": "ChallengeOutside"
+								"layout": "EndLayout"
 							}
 						}
 					],
@@ -1675,9 +1675,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 888226249561690,
+							"sid": 356660154226874,
 							"parameters": {
-								"layout": "OutsideLayout"
+								"layout": "EndLayout"
 							}
 						}
 					],

@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 1",
+	"name": "Map1Sheet",
 	"events": [
 		{
 			"eventType": "variable",
@@ -32,6 +32,16 @@
 			"sid": 101426562773959
 		},
 		{
+			"eventType": "variable",
+			"name": "Achievement_Shield",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 197377165099346
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -42,11 +52,47 @@
 			],
 			"actions": [
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 364524200251148
+				},
+				{
 					"id": "set-layout-scale",
 					"objectClass": "System",
-					"sid": 316508215584197,
+					"sid": 540124833639950,
 					"parameters": {
-						"scale": "4.0"
+						"scale": "4"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "UI_shield",
+					"sid": 397391064118372,
+					"parameters": {
+						"frame-number": "Achievement_Shield"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 370035297382779,
+					"parameters": {
+						"layer": "\"Shield\"",
+						"scale": "0.25"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 638453117229222,
+					"parameters": {
+						"audio-file": {
+							"path": "Map1/C418 - Cat - Minecraft Volume Alpha"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],

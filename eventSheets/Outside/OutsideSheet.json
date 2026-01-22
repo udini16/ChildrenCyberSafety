@@ -48,6 +48,23 @@
 					"parameters": {
 						"scale": "2.0"
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "UI_shield",
+					"sid": 515512008755015,
+					"parameters": {
+						"frame-number": "Achievement_Shield"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 262442962758279,
+					"parameters": {
+						"layer": "\"Shield\"",
+						"scale": "0.5"
+					}
 				}
 			],
 			"sid": 474165815386476

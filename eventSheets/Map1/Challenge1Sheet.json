@@ -52,6 +52,11 @@
 			],
 			"actions": [
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 719422436034586
+				},
+				{
 					"id": "set-layout-scale",
 					"objectClass": "System",
 					"sid": 406152511232975,
@@ -102,6 +107,28 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "textboxchallenge1",
+					"sid": 808533695779353,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 516488003979014,
+					"parameters": {
+						"audio-file": {
+							"path": "Map1/Tory Lanez - Lavender Sunflower (Instrumental)"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 428062859589683
@@ -132,6 +159,14 @@
 					"id": "set-visible",
 					"objectClass": "InstructionTXT",
 					"sid": 395284245583413,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "textboxchallenge1",
+					"sid": 903161016770054,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -375,6 +410,20 @@
 								"variable": "Score",
 								"value": "1"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 377976546346282,
+							"parameters": {
+								"audio-file": {
+									"path": "Map1/snkneo-geo-insert-coin-sound"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 519134698229086
@@ -411,10 +460,10 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 679926154008970,
+							"sid": 830958035811621,
 							"parameters": {
 								"variable": "Score",
-								"comparison": 4,
+								"comparison": 5,
 								"value": "5"
 							}
 						}
@@ -452,6 +501,15 @@
 							"parameters": {
 								"text": "\"LEVEL CLEARED!!\n\nSUCCESS: You trusted the Happy Cloud (Family) with your secret. They will keep you safe\n\nWARNING: Avoid the Angry Cloud next time. That is a Stranger trying to trick you.\n\n(Press SPACE to Finish)\""
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 653413563886777,
+							"parameters": {
+								"variable": "Achievement_Shield",
+								"value": "1"
+							}
 						}
 					],
 					"sid": 999093885459022
@@ -486,9 +544,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 279148534649131,
+							"sid": 897674304663677,
 							"parameters": {
-								"layout": "Map1"
+								"layout": "Map3"
 							}
 						}
 					],
