@@ -2180,7 +2180,12 @@
 					"uid": 309,
 					"sid": 922098397625726,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TalkState": 0,
+						"Message": "",
+						"isTalking": false,
+						"ID": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 922098397625726,

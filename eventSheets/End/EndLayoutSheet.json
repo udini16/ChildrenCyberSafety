@@ -23,6 +23,20 @@
 					"parameters": {
 						"frame-number": "4"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 599639897180171,
+					"parameters": {
+						"audio-file": {
+							"path": "you-won-the-internets"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 102184255256868

@@ -579,6 +579,168 @@
 						}
 					],
 					"sid": 831384819719226
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 802394248897833,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 304977320432025,
+							"parameters": {
+								"object": "NPC1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 393952090827136,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "NPC1",
+									"sid": 596658946212902,
+									"parameters": {
+										"instance-variable": "TalkState",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Dialogbox16",
+									"sid": 607662831368615,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "DialogText16",
+									"sid": 380940671837767,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "DialogText16",
+									"sid": 125204123842281,
+									"parameters": {
+										"text": "NPCGame3.Message & newline & \"[Press E]\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "NPC1",
+									"sid": 458284922209227,
+									"parameters": {
+										"instance-variable": "TalkState",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "NPC1",
+									"sid": 759014361883510,
+									"parameters": {
+										"instance-variable": "isTalking",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 942061100224444
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "NPC1",
+									"sid": 917799109145867,
+									"parameters": {
+										"instance-variable": "TalkState",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "DialogText16",
+									"sid": 978064205055281,
+									"parameters": {
+										"text": "\"Hello There, WELCOME NEW STUDENT!!\nYou need to find a teacher to continue your journey dear student!\""
+									}
+								}
+							],
+							"sid": 663327404660802
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 606754574408187,
+							"parameters": {
+								"object": "NPC1"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Dialogbox16",
+							"sid": 519629341062958,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DialogText16",
+							"sid": 296065223125544,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "NPC1",
+							"sid": 937424547145835,
+							"parameters": {
+								"instance-variable": "isTalking",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "NPC1",
+							"sid": 963145272506162,
+							"parameters": {
+								"instance-variable": "TalkState",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 888881961939328
 				}
 			],
 			"sid": 701173544297510

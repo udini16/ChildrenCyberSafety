@@ -200,7 +200,12 @@
 					"uid": 60,
 					"sid": 432022774556705,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TalkState": 0,
+						"Message": "\"Hello There!!\"",
+						"isTalking": false,
+						"ID": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 432022774556705,
@@ -3427,6 +3432,96 @@
 						"y": 291.99698000903834,
 						"width": 328.50225692305236,
 						"height": 54.422594368739965,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialogbox16",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 402,
+					"sid": 214807382611518,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 214807382611518,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1084.5826524154168,
+						"y": 460.4710010933171,
+						"width": 339.5879432076583,
+						"height": 73.26163561328241,
+						"originX": 0.5222222222222223,
+						"originY": 0.5679012345679012,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DialogText16",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Cooper",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 403,
+					"sid": 264369305812387,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 264369305812387,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 918.4648675003081,
+						"y": 428.40824536695817,
+						"width": 323.380161165837,
+						"height": 56.34306802746005,
 						"originX": 0,
 						"originY": 0,
 						"color": [

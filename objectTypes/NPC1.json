@@ -4,7 +4,36 @@
 	"sid": 330339605461080,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "TalkState",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 708879474333681
+		},
+		{
+			"name": "Message",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 654957612642051
+		},
+		{
+			"name": "isTalking",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 209573189968877
+		},
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 328626288530820
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
