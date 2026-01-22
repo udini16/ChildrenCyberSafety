@@ -906,9 +906,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 451301180261745,
+							"sid": 969546437955954,
 							"parameters": {
-								"layout": "RTPStart"
+								"layout": "OutsideLayout"
 							}
 						}
 					],

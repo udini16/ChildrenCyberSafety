@@ -29,9 +29,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 336045164904150,
+					"sid": 513294783549014,
 					"parameters": {
-						"layout": "Map1"
+						"layout": "InstructionLayout"
 					}
 				}
 			],

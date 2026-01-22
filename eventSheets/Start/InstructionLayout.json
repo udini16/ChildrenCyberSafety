@@ -1,0 +1,32 @@
+{
+	"name": "InstructionLayout",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 849524210479943,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ContinueButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 108380481663888,
+					"parameters": {
+						"layout": "Map1"
+					}
+				}
+			],
+			"sid": 439331227540886
+		}
+	],
+	"sid": 885769445510452
+}

@@ -35,7 +35,7 @@
 			"eventType": "variable",
 			"name": "Achievement_Shield",
 			"type": "number",
-			"initialValue": "3",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -59,7 +59,7 @@
 				{
 					"id": "set-layout-scale",
 					"objectClass": "System",
-					"sid": 540124833639950,
+					"sid": 790971742923611,
 					"parameters": {
 						"scale": "4"
 					}

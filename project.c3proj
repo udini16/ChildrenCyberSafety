@@ -189,14 +189,19 @@
 			"lose",
 			"Challenge1Background",
 			"UI_shield",
-			"Sprite5",
+			"StartBackground2",
 			"TextBox",
 			"textbox1",
 			"Sprite6",
 			"Sprite7",
 			"SpeakerMute",
 			"textboxchallenge1",
-			"Sprite8"
+			"Sprite8",
+			"MainCharacterInstruction",
+			"Sprite5",
+			"Sprite9",
+			"Sprite10",
+			"ContinueButton"
 		],
 		"subfolders": [
 			{
@@ -355,7 +360,8 @@
 			},
 			{
 				"items": [
-					"StartLayout"
+					"StartLayout",
+					"InstructionLayout"
 				],
 				"subfolders": [],
 				"name": "Start"
@@ -410,7 +416,8 @@
 			},
 			{
 				"items": [
-					"StartLayoutSheet"
+					"StartLayoutSheet",
+					"InstructionLayout"
 				],
 				"subfolders": [],
 				"name": "Start"
